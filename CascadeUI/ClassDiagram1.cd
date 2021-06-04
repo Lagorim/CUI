@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CascadeUITest.BaseHelper" Collapsed="true">
+    <Position X="3.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABCEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AppManager\BaseHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CascadeUITest.ContractHelper" Collapsed="true">
+    <Position X="0.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oQAJDABDQAQoAGESuAEyBQACBACUAACACIBMKAABAAU=</HashCode>
+      <FileName>AppManager\ContractHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CascadeUITest.ContrAgentHelper" Collapsed="true">
+    <Position X="0.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAUAAAAAAAAAAAAEAAAAgAAAACAAAAEIRAAAAA=</HashCode>
+      <FileName>AppManager\ContrAgentHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CascadeUITest.LoginHelper" Collapsed="true">
+    <Position X="0.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAAAAAEAAAACAAAAAAA=</HashCode>
+      <FileName>AppManager\LoginHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CascadeUITest.ManagerApp" Collapsed="true">
+    <Position X="4.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAECAAAABAAAAgAQSIBCAAgAIAQCANEBUAQCA=</HashCode>
+      <FileName>AppManager\ManagerApp.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CascadeUITest.NavigationHelper" Collapsed="true">
+    <Position X="0.5" Y="5.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AppManager\NavigationHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CascadeUITest.BaseTest" Collapsed="true">
+    <Position X="7" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAgAAAAAAAAAAAAAAAAgAAAACAAAAAAAAA=</HashCode>
+      <FileName>Tests\BaseTest.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CascadeUITest.AuthBaseTest" Collapsed="true">
+    <Position X="8.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Tests\AuthBaseTest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CascadeUITest.CheckCreateContract" Collapsed="true">
+    <Position X="6.25" Y="6" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAJAAAAAAAAAAAEAAAAQAAAAAQAAAABAAAAAAoA=</HashCode>
+      <FileName>Tests\CheckCreateContract.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CascadeUITest.CheckCreateContragent" Collapsed="true">
+    <Position X="6" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABEAAAAAAAAAAAAAAEAAAAAAAAAIAAAEAA=</HashCode>
+      <FileName>Tests\CheckCreateContragent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CascadeUITest.CheckCreateLogin" Collapsed="true">
+    <Position X="9.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Tests\CheckLogin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

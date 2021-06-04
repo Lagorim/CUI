@@ -1,0 +1,5 @@
+docker run -d -p 4444:4444 -v /var/run/docker.sock:/var/run/docker.sock -v C:\work\aispd-uitests\UITests\UITests\resources\config\:/etc/selenoid/:ro -v C:\DockerDownloads\:/home/selenium/Downloads/:rw -limit 4 --name selenoid aerokube/selenoid
+
+docker run -d -p 8080:8080 -v /var/run/docker.sock:/var/run/docker.sock -v C:\work\aispd-uitests\UITests\UITests\resources\config\:/etc/selenoid/:ro --link selenoid --name selenoid-ui aerokube/selenoid-ui
+
+docker-compose up -d
