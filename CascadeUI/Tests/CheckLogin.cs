@@ -15,7 +15,7 @@ namespace CascadeUITest
     public class CheckCreateLogin : AuthBaseTest
     {
 
-        [TestCase(TestName = "#01 Проверка валидных данных при логине")]
+        [TestCase(TestName = "#01 Проверка валидных данных при логине"), Order(1)]
         public void CheckLoginTest_Admin()
         {
             app.Auth.Logout();
@@ -24,7 +24,7 @@ namespace CascadeUITest
             Assert.IsTrue(app.Auth.IsLoggedIn());
         }
 
-        [TestCase(TestName = "#02 Проверка не валидных данных при логине")]
+        [TestCase(TestName = "#02 Проверка не валидных данных при логине"), Order(2)]
         public void CheckLoginNotValid()
         {
             app.Auth.Logout();

@@ -32,7 +32,7 @@ namespace CascadeUITest
 
                 Logout();
             }
-
+            Thread.Sleep(5000);
             driver.FindElement(By.Name("login")).SendKeys(username);
             driver.FindElement(By.Name("password")).Clear();
             driver.FindElement(By.Name("password")).SendKeys(password);

@@ -15,33 +15,33 @@ namespace CascadeUITest
     public class CheckCreateContract : AuthBaseTest
     {
 
-        [TestCase(TestName = "#01 Проверка создания договора - с истекшей датой")]
-        public void AddContract()
-        {
+        //[TestCase(TestName = "#01 Проверка создания договора - с истекшей датой")]
+        //public void AddContract()
+        //{
 
-            app.Contract.CreateContract(new ContractData("1000-Т", "30042022", "16:05:011601:1006", "Кадастровая стоимость", "2"));
-            //app.Contract
-            //.ClickOnContracts()
-            //.ButtonAdd()
-            //.NumberContract(new ContractData("1000-dd"))
-            //.ChoiceDateEnd_Today()
-            //.ChoiceObjectRent(new ContractData("16:05:011601:1006"));
+        //    app.Contract.CreateContract(new ContractData("30042022", "", "", "16:05:011601:1006", "Кадастровая стоимость", "2","06.04.2017"));
+        //    //app.Contract
+        //    //.ClickOnContracts()
+        //    //.ButtonAdd()
+        //    //.NumberContract(new ContractData("1000-dd"))
+        //    //.ChoiceDateEnd_Today()
+        //    //.ChoiceObjectRent(new ContractData("16:05:011601:1006"));
 
-            Assert.IsTrue(app.Contract.CheckStatusContract_Expired());
-            app.Contract.CheckRecContract("1000-Т");
-            app.Contract.DeleteLastContract();
-        }
+        //    Assert.IsTrue(app.Contract.CheckStatusContract_Expired());
+        //    app.Contract.CheckRecContract();
+        //    app.Contract.DeleteLastContract();
+        //}
 
-        [TestCase(TestName = "#02 Проверка создания договора - с датой действующей")]
-        public void AddContractTrueDate()
-        {
-            app.Contract.CreateContractTrueStatus(new ContractData("4409-Т", "16:05:011601:1006", "30.04.2022", "Кадастровая стоимость", "2"));
+        //[TestCase(TestName = "#02 Проверка создания договора - с датой действующей")]
+        //public void AddContractTrueDate()
+        //{
+        //    app.Contract.CreateContractTrueStatus(new ContractData("", "", "16:05:011601:1006", "30.04.2022", "Кадастровая стоимость", "2", "01.04.2018"));
 
-            Assert.IsTrue(app.Contract.CheckStatusContract_Correct());
-            app.Contract.CheckRecContract("4409-Т");
-            //app.Contract.CheckStatusContract_Correct();
-            app.Contract.DeleteLastContract();
-        }
+        //    Assert.IsTrue(app.Contract.CheckStatusContract_Correct());
+        //    app.Contract.CheckRecContract();
+        //    //app.Contract.CheckStatusContract_Correct();
+        //    app.Contract.DeleteLastContract();
+        //}
 
         [TestCase(TestName = "#03 Переход договора в редактирование")]
         public void RedactionContractClick()

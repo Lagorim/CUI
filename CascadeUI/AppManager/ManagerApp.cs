@@ -21,6 +21,7 @@ namespace CascadeUITest
         protected NavigationHelper navigationHelper;
         protected ContractHelper contractHelper;
         protected ContrAgentHelper contrAgentHelper;
+        protected PaymentHelper paymentHelper;
 
         protected IWebDriver driver;
         //private StringBuilder verificationErrors;
@@ -49,6 +50,7 @@ namespace CascadeUITest
             navigationHelper = new NavigationHelper(this/*, baseURL*/);
             contractHelper = new ContractHelper(this);
             contrAgentHelper = new ContrAgentHelper(this);
+            paymentHelper = new PaymentHelper(this);
 
             //новое
             NameSession = name;
@@ -244,6 +246,14 @@ namespace CascadeUITest
             get
             {
                 return contrAgentHelper;
+            }
+        }
+
+        public PaymentHelper Payment
+        {
+            get
+            {
+                return paymentHelper;
             }
         }
 
