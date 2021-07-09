@@ -14,6 +14,7 @@ namespace CascadeUITest
     public class PaymentHelper : BaseHelper
     {
         private string summ;
+        private string day;
         private int summ1;
 
         public PaymentHelper(ManagerApp manager) : base(manager)
@@ -162,7 +163,7 @@ namespace CascadeUITest
         {
             //проверка отображения суммы "0,00" в столбце "Входящее"
 
-            return IsElementPresent(By.XPath("(//div[@class='x-grid-cell-inner '][normalize-space()='0,00'])[1]")); //
+            return IsElementPresent(By.XPath("(//span[contains(text(),'Начисления')]/following::div[@class='x-grid-cell-inner '])[2][normalize-space()='0,00']")); //
         }
 
         public bool CheckSummIncoming_2String()
@@ -184,14 +185,29 @@ namespace CascadeUITest
         {
             //проверка отображения суммы пени в столбце "Начислено"
 
-            return IsElementPresent(By.XPath(""));
+
+            var days = DateTime.Now.ToString("dd");
+            var tmp1 = Int32.TryParse(days, out Int32 days1);
+                     
+
+
+            var str = summ.Length;
+            //int total = summ.Sum(value => int.Parse(summ));
+            var tmp = Decimal.TryParse(summ, out Decimal total);
+            var total1 = total * 0.1m / 100 * days1;
+            
+
+            return IsElementPresent(By.XPath("(//span[contains(text(),'Пени')]/following::div[@class='x-grid-cell-inner '][normalize-space()='"+ total1 + "'])[1]"));
         }
 
         public bool CheckSummPenaltiesOutgoing()
         {
+            var str = summ.Length;
+            //int total = summ.Sum(value => int.Parse(summ));
+            var tmp = Decimal.TryParse(summ, out Decimal total);
+            var total1 = total * 0.1m / 100 * 7;
 
-
-            return IsElementPresent(By.XPath(""));
+            return IsElementPresent(By.XPath("(//span[contains(text(),'Пени')]/following::div[@class='x-grid-cell-inner '][normalize-space()='" + total1 + "'])[2]"));
         }
 
     }

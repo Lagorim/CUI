@@ -31,24 +31,26 @@ namespace CascadeUITest
             //Создание договора
             driver = manager.Driver;
 
+            driver.Navigate().Refresh();
             ClickOnContracts();
             ButtonAdd();
             NumberContract(numberContract);
             ChoiceDateEnd_Today();
             ChoiceObjectRent(contract.NumberObject);
-            ChoiceTypeConclusion(dateConlusion);
+            ChoiceTypeConclusion(contract.Conclusion);
             ChoiceDatePay(value);
-            try
-            {
-                ClickSave();
-                driver.FindElement(By.XPath("//div[contains(text(),'Ошибка! Поле Арендаторы обязательное поле для заполнения')]"));
-            }
-            catch
-            {
-                AddTenant();
-            }
+            //try
+            //{
+            //    ClickSave();
+            //    driver.FindElement(By.XPath("//div[contains(text(),'Ошибка! Поле Арендаторы обязательное поле для заполнения')]"));
+            //}
+            //catch
+            //{
+            AddTenant();
+            //}
             Contragent();
-            DateStartContragentForm(dateConlusion);
+            
+            DateStartContragentForm();
             SalaryContragent(salary);
             ClickSave();
             Thread.Sleep(2000);
@@ -78,7 +80,7 @@ namespace CascadeUITest
                 AddTenant();
             //}
             Contragent();
-            DateStartContragentForm(dateConlusion);
+            DateStartContragentForm();
             SalaryContragent(salary);
             ClickSave();
             Thread.Sleep(2000);
@@ -569,7 +571,16 @@ namespace CascadeUITest
             driver.FindElement(By.XPath("//span[contains(text(),'Требует направление претензии')]")).Click();
         }
 
-        
+        public void RedactionContract()
+        {
+            Thread.Sleep(3000);
+            driver.Navigate().Refresh();
+            Thread.Sleep(5000);
+            driver.FindElement(By.XPath("//tr[@class='  x-grid-row']")).Click();
+            Thread.Sleep(3000);
+
+            driver.FindElement(By.XPath("//span[contains(text(),'Редактировать')]")).Click();
+        }
 
         public void RedactionClickButton()
         {
@@ -595,37 +606,58 @@ namespace CascadeUITest
 
         public void DeleteLastContract()
         {
-            //driver = manager.Driver;
+            //удаление последнего договора
 
+            Thread.Sleep(3000);
+            driver.Navigate().Refresh();
             Thread.Sleep(5000);
             driver.FindElement(By.XPath("//tr[@class='  x-grid-row']")).Click();
-            Thread.Sleep(6000);
+            Thread.Sleep(3000);
+
+            //Actions actions = new Actions(driver);
+            //IWebElement elementLocator = driver.FindElement(By.XPath("(//a[@role='button']//span[contains(text(),'Удалить')])[1]"));
+            //actions.DoubleClick(elementLocator);
+            
             driver.FindElement(By.XPath("(//div[@role='toolbar']//span[contains(text(),'Удалить')])[1]")).Click();
             Thread.Sleep(8000);
             CloseWindowAttentionForDelete();
-            //return this;
         }
 
         public void CloseWindowAttentionForDelete()
         {
-            
-            driver.FindElement(By.XPath("(//span[contains(text(),'Да')])[36]")).Click();
+            //подтверждение удаления - кнопка "Да"
+
+            driver.FindElement(By.XPath("//div[contains(text(),'Предупреждение')]/following::span[contains(text(),'Да')]")).Click();
             //return this;
         }
 
         public void CheckRecContract(/*string numberContract*/) // стринг и драйвер после отладки убрать
         {
-            //проверка поле фильтра "номер договора"
-            //driver = manager.Driver;
+            //внесение "номер договора" в поле фильтра "номер договора" 
 
             Thread.Sleep(3000);
             driver.FindElement(By.XPath("(//input[@data-ref='inputEl'])[3]")).SendKeys(numberContract);
+            Thread.Sleep(3000);
             //return this;
+        }
+
+        public bool FilterFieldCheck()
+        {
+            //проверка значения фильтра
+
+            return IsElementPresent(By.XPath("(//div[@class='x-grid-cell-inner '])[3]"));
+        }
+
+        public bool FilterSecondStringCheck()
+        {
+            //проверка значения поля фильтра "номер договора" для второй строчки. 
+
+            return IsElementPresent(By.XPath("((//table[@role='presentation'])[2]//div[@class='x-grid-cell-inner '])[3]"));
         }
 
         public bool CheckStatusContract_Correct()
         {
-            //Проверка статуса договора (истек срок)
+            //Проверка статуса договора (Действующий)
 
             return IsElementPresent(By.XPath("//div[contains(text(),'Действующий')]"));
 
@@ -651,16 +683,18 @@ namespace CascadeUITest
             //return this;
         }
 
-        public void DateStartContragentForm(string dataStartPay)
+        public void DateStartContragentForm()
         {
             //Выбрать дату начала расчета (на форме выбора контрагента)
+
+            var date = DateTime.Today.ToString("ddMMyyyy");
 
             var elem = driver.FindElement(By.XPath("(//input[@name='Date'])[4]"));
             elem.Click();
             Thread.Sleep(7000);
             //elem.Submit();
             //Thread.Sleep(3000);
-            elem.SendKeys(dataStartPay);
+            elem.SendKeys(date);
             Thread.Sleep(3000);
             //Thread.Sleep(6000);
             //driver.FindElement(By.XPath("(//div[@data-ref='footerEl'])[2]//span[contains(text(),'Сегодня')]")).Click();
@@ -690,6 +724,19 @@ namespace CascadeUITest
             //return this;
         }
 
+        //public void ClickSaveButtonTenant()
+        //{
+        //    //клик по копке "Сохранить" в форме "Арендатор"
+
+
+        //    //WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+        //    //IWebElement result = wait.Until(e => e.FindElement(By.XPath("//div[contains(text(),'Арендатор')]/following::span[contains(text(),'Сохранить')]")));
+
+        //    //result.Click();
+
+        //    driver.FindElement(By.XPath("//div[contains(text(),'Арендатор')]/following::span[contains(text(),'Сохранить')]")).Click();
+        //}
+
         public void ClickSave()
         {
             //клик по кнопке "Сохранить"
@@ -705,7 +752,8 @@ namespace CascadeUITest
 
             driver.FindElement(By.XPath("(//label//span[contains(text(),'Расчетная дата оплаты')]/following::div//div[@role='presentation'])[3]")).Click();
             Thread.Sleep(6000);
-            driver.FindElement(By.XPath("//div[@data-ref='listWrap']//ul[@class='x-list-plain']//li[@role='option']['"+value+"']")).Click();
+            //driver.FindElement(By.XPath("(//div[@data-ref='listWrap']//ul[@class='x-list-plain']//li[@role='option'])['"+value+"']")).Click();
+            driver.FindElement(By.XPath("//li[normalize-space()='"+value+"']")).Click();
 
             //return this;
         }
@@ -776,8 +824,19 @@ namespace CascadeUITest
         {
             //Выбрать дату окончания действия ("Cегодня")
 
-            driver.FindElement(By.Id("dateextendfield-1078-trigger-picker")).Click();
-            driver.FindElement(By.XPath("//span[contains(text(),'Сегодня')]")).Click();
+            var actionDateEnd = DateTime.Today.ToString("ddMMyyyy");
+
+            Actions actions = new Actions(driver);
+            IWebElement elementLocator = driver.FindElement(By.XPath("(//span[contains(text(),'Дата окончания действия:')]/following::input[@name='ActionDateEnd'])[1]"));
+            actions.DoubleClick(elementLocator).Perform();
+            Thread.Sleep(3000);
+            elementLocator.SendKeys(actionDateEnd);
+            Thread.Sleep(3000);
+
+
+
+            //driver.FindElement(By.Id("dateextendfield-1078-trigger-picker")).Click();
+            //driver.FindElement(By.XPath("//span[contains(text(),'Сегодня')]")).Click();
 
             //return this;
         }
@@ -803,10 +862,48 @@ namespace CascadeUITest
         public void ClickOnContracts()
         {
             //Выбрать "договоры" в меню
+            driver = manager.Driver;
 
+            driver.Navigate().Refresh();
             driver.FindElement(By.XPath("//div[@id='menuTreePanelItemId']//span[contains(text(),'Договоры')]/i")).Click();
 
+            //driver.FindElement(By.XPath("//div[@class='thumb-wrap']//span[contains(text(),'Договоры')]")).Click();
+
             //return this;
+        }
+
+        public void RefreshButton()
+        {
+            Thread.Sleep(3000);
+            driver.FindElement(By.XPath("(//div[@role='toolbar']//span[contains(text(),'Обновить')])[1]")).Click();
+        }
+
+        public void ClickUnloadButton()
+        {
+
+            Thread.Sleep(3000);
+            driver.FindElement(By.XPath("//div[@role='toolbar']//span[contains(text(),'Выгрузить')]")).Click();
+        }
+
+        public  void CloneContract()
+        {
+            //driver = manager.Driver;
+
+            Thread.Sleep(3000);
+            driver.Navigate().Refresh();
+            Thread.Sleep(5000);
+            driver.FindElement(By.XPath("//tr[@class='  x-grid-row']")).Click();
+            Thread.Sleep(3000);
+            driver.FindElement(By.XPath("(//div[contains(@class,'x-grid-cell-inner x-grid-cell-inner-action-col')])[1]")).Click();
+            driver.FindElement(By.XPath("//span[contains(text(),'Клонировать договор')]")).Click();    
+
+        }
+
+        public void ForCloneContract_ObjectRent(string numberObject)
+        {
+            Thread.Sleep(3000);
+            ChoiceObjectRent(numberObject);
+            ClickSave();
         }
     }
 }

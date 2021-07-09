@@ -21,11 +21,11 @@ namespace CascadeUITest
         protected IWebDriver driver;
 
         public string numberContract = "Тест-" + new Random().Next(10, 10000).ToString();
-        public string salary = new Random().Next(10, 9000000).ToString();
+        public string salary = new Random().Next(1, 90000).ToString();
 
-        public string dateConlusion = DateTime.Now.ToString("ddMM") + "2020";
+        public string dateConlusion = DateTime.Now.ToString("01MM") + "2020";
         public string dateEndContract = DateTime.Now.AddYears(2).ToString("ddMMyyyy");
-        public string value = new Random().Next(1, 9).ToString();
+        public string value = new Random().Next(1, 28).ToString();
 
         public BaseHelper(ManagerApp manager)
         {

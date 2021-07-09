@@ -19,8 +19,11 @@ namespace CascadeUITest
 
         public ContrAgentHelper CheckCreateTenant(ContrAgentData contrAgent)
         {
-            manager.Contract.ClickOnContracts();
-            manager.Contract.ButtonAdd();
+            driver = manager.Driver;
+
+
+            //manager.Contract.ClickOnContracts();
+            ButtonAdd();
             AddTenant();
             Contragent();
             DateStartContragentForm();
@@ -127,6 +130,13 @@ namespace CascadeUITest
             driver.FindElement(By.XPath("//label[contains(text(),'Арендаторы')]/following::span[contains(text(),'Добавить')]")).Click();
 
             return this;
+        }
+
+        public void ButtonAdd()
+        {
+            //Кликнуть кнопку "Добавить"
+
+            driver.FindElement(By.XPath("(//span[contains(text(),'Добавить')])[1]")).Click();
         }
     }
 }

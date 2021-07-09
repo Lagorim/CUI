@@ -202,6 +202,8 @@ namespace CascadeUITest
             }
         }
 
+
+
         public void CloseDialogWindow()
         {
             try
