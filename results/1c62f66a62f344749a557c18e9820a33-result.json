@@ -1,0 +1,75 @@
+{
+  "uuid": "d39ae11c-be16-46a2-b83d-815da49206ac-tr-0-1015",
+  "historyId": "CascadeUITest.CheckCreateContract.#08 Проверка удаления (функциональные кнопки)",
+  "fullName": "CascadeUITest.CheckCreateContract.#08 Проверка удаления (функциональные кнопки)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-F7IBGNA"
+    },
+    {
+      "name": "testClass",
+      "value": "CascadeUITest.CheckCreateContract"
+    },
+    {
+      "name": "testMethod",
+      "value": "DeleteContractFuncButton"
+    },
+    {
+      "name": "package",
+      "value": "CascadeUITest.CheckCreateContract"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Договор"
+    },
+    {
+      "name": "suite",
+      "value": "Договор"
+    },
+    {
+      "name": "feature",
+      "value": "Договор"
+    }
+  ],
+  "links": [],
+  "name": "#08 Проверка удаления (функциональные кнопки)",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "#08 Проверка удаления (функциональные кнопки)",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "69a81ca18f8a43c78546a3eaf277ba2c-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1626262841710,
+      "stop": 1626262883801
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1626262841710,
+  "stop": 1626262883801
+}

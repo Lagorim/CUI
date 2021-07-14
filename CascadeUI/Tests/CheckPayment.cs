@@ -13,7 +13,7 @@ namespace CascadeUITest
         public void CheckOpenPayment()
         {
             app.Contract.CreateContractTrueStatus(new ContractData("16:05:011601:1006", "Кадастровая стоимость"));
-            app.Contract.CheckRecContract();
+            //app.Contract.CheckRecContract();
 
             app.Payment.ClickStatusPayment();
 
@@ -25,7 +25,7 @@ namespace CascadeUITest
         [Order(2)]
         public void CheckChangeStatus()
         {
-            app.Contract.CheckRecContract();
+            //app.Contract.CheckRecContract();
             app.Payment.ClickStatusPayment();
 
             app.Payment.ClickRecalculate();
@@ -42,7 +42,8 @@ namespace CascadeUITest
         public void CheckSummPay()
         {
             //app.Contract.CreateContractTrueStatus(new ContractData("01.06.2020", "01.06.2020", "16:05:011601:1006", "01.06.2022", "Кадастровая стоимость", "1", "01.06.2020"));
-            app.Contract.CheckRecContract();
+            
+            //app.Contract.CheckRecContract();
             app.Payment.ClickStatusContratcClaim();
 
             app.Payment.ClickRecalculate();
@@ -58,7 +59,7 @@ namespace CascadeUITest
         [Order(4)]
         public void CheckSummPenalties()
         {
-            app.Contract.CheckRecContract();
+            //app.Contract.CheckRecContract();
             app.Payment.ClickStatusContratcClaim();
 
             app.Payment.ClickRecalculate();

@@ -1,0 +1,43 @@
+{
+  "uuid": "906f797c-40df-46cf-b0eb-a0aaceaa90ff-tc-0-1000",
+  "name": "CascadeUITest.CheckCreateContract.#06 Выгрузить договора",
+  "children": [
+    "491f9cd2-00f4-4f0b-8789-58d398150345-tr-0-1011"
+  ],
+  "befores": [
+    {
+      "name": "SetupManagerApp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1626262799558,
+      "stop": 1626262799558
+    },
+    {
+      "name": "SetupLogin",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1626262799558,
+      "stop": 1626262799558
+    }
+  ],
+  "afters": [],
+  "links": [],
+  "start": 1626262775786,
+  "stop": 1626262799559
+}

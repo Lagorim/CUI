@@ -1,0 +1,79 @@
+{
+  "uuid": "71ab2888-0515-49cc-b84d-015f93dcd8dc-tr-0-1033",
+  "historyId": "CascadeUITest.CheckCreateContract.#17 Редактирование иска",
+  "fullName": "CascadeUITest.CheckCreateContract.#17 Редактирование иска",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-F7IBGNA"
+    },
+    {
+      "name": "testClass",
+      "value": "CascadeUITest.CheckCreateContract"
+    },
+    {
+      "name": "testMethod",
+      "value": "ReadactionLawSuit"
+    },
+    {
+      "name": "package",
+      "value": "CascadeUITest.CheckCreateContract"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Договор"
+    },
+    {
+      "name": "suite",
+      "value": "Договор"
+    },
+    {
+      "name": "feature",
+      "value": "Договор"
+    }
+  ],
+  "links": [],
+  "name": "#17 Редактирование иска",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.ElementNotInteractableException : element not interactable\n  (Session info: chrome=90.0.4430.72)",
+    "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.Click()\r\n   at CascadeUITest.ContractHelper.ChangeViewRequest() in C:\\Users\\source\\CascadeUI\\CascadeUI\\CascadeUI\\CascadeUI\\CascadeUI\\AppManager\\ContractHelper.cs:line 698\r\n   at CascadeUITest.ContractHelper.RedactionLawSuit() in C:\\Users\\source\\CascadeUI\\CascadeUI\\CascadeUI\\CascadeUI\\CascadeUI\\AppManager\\ContractHelper.cs:line 222\r\n   at CascadeUITest.CheckCreateContract.ReadactionLawSuit() in C:\\Users\\source\\CascadeUI\\CascadeUI\\CascadeUI\\CascadeUI\\CascadeUI\\Tests\\CheckCreateContract.cs:line 252"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "#17 Редактирование иска",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.ElementNotInteractableException : element not interactable\n  (Session info: chrome=90.0.4430.72)",
+        "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.Click()\r\n   at CascadeUITest.ContractHelper.ChangeViewRequest() in C:\\Users\\source\\CascadeUI\\CascadeUI\\CascadeUI\\CascadeUI\\CascadeUI\\AppManager\\ContractHelper.cs:line 698\r\n   at CascadeUITest.ContractHelper.RedactionLawSuit() in C:\\Users\\source\\CascadeUI\\CascadeUI\\CascadeUI\\CascadeUI\\CascadeUI\\AppManager\\ContractHelper.cs:line 222\r\n   at CascadeUITest.CheckCreateContract.ReadactionLawSuit() in C:\\Users\\source\\CascadeUI\\CascadeUI\\CascadeUI\\CascadeUI\\CascadeUI\\Tests\\CheckCreateContract.cs:line 252"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "610d44f6ee96422ab91d0741691172cb-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1626263612510,
+      "stop": 1626263644927
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1626263612510,
+  "stop": 1626263644927
+}

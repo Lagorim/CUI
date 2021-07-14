@@ -1,0 +1,79 @@
+{
+  "uuid": "acdca512-9374-4cfa-b584-e821e4c6c9ae-tr-0-1031",
+  "historyId": "CascadeUITest.CheckCreateContract.#16 Добавление иска",
+  "fullName": "CascadeUITest.CheckCreateContract.#16 Добавление иска",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-F7IBGNA"
+    },
+    {
+      "name": "testClass",
+      "value": "CascadeUITest.CheckCreateContract"
+    },
+    {
+      "name": "testMethod",
+      "value": "AddLawSuit"
+    },
+    {
+      "name": "package",
+      "value": "CascadeUITest.CheckCreateContract"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Договор"
+    },
+    {
+      "name": "suite",
+      "value": "Договор"
+    },
+    {
+      "name": "feature",
+      "value": "Договор"
+    }
+  ],
+  "links": [],
+  "name": "#16 Добавление иска",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "  Expected: True\r\n  But was:  False\r\n",
+    "trace": "   at CascadeUITest.CheckCreateContract.AddLawSuit() in C:\\Users\\source\\CascadeUI\\CascadeUI\\CascadeUI\\CascadeUI\\CascadeUI\\Tests\\CheckCreateContract.cs:line 245\r\n"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "#16 Добавление иска",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "  Expected: True\r\n  But was:  False\r\n",
+        "trace": "   at CascadeUITest.CheckCreateContract.AddLawSuit() in C:\\Users\\source\\CascadeUI\\CascadeUI\\CascadeUI\\CascadeUI\\CascadeUI\\Tests\\CheckCreateContract.cs:line 245\r\n"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "807410dd44d144be9280970f154071bf-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1626263497323,
+      "stop": 1626263612509
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1626263497323,
+  "stop": 1626263612509
+}

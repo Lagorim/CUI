@@ -1,0 +1,75 @@
+{
+  "uuid": "0b892b37-607f-410b-ac1c-9a1e8100bb8f-tr-0-1017",
+  "historyId": "CascadeUITest.CheckCreateContract.#09 Клонирование договора (функциольные кнопки)",
+  "fullName": "CascadeUITest.CheckCreateContract.#09 Клонирование договора (функциольные кнопки)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-F7IBGNA"
+    },
+    {
+      "name": "testClass",
+      "value": "CascadeUITest.CheckCreateContract"
+    },
+    {
+      "name": "testMethod",
+      "value": "CloneContract"
+    },
+    {
+      "name": "package",
+      "value": "CascadeUITest.CheckCreateContract"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Договор"
+    },
+    {
+      "name": "suite",
+      "value": "Договор"
+    },
+    {
+      "name": "feature",
+      "value": "Договор"
+    }
+  ],
+  "links": [],
+  "name": "#09 Клонирование договора (функциольные кнопки)",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "#09 Клонирование договора (функциольные кнопки)",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "f574ae739cb4440ab92fec30681caaf1-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1626262883802,
+      "stop": 1626262984009
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1626262883802,
+  "stop": 1626262984009
+}

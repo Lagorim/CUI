@@ -128,7 +128,7 @@ namespace CascadeUITest
         public void AddClaimPaidContract(string dateClaim, string dateStart, string dateEnd)
         {
             //Добавление претензии в статусе договора "Нет задолженности"
-
+            driver.Navigate().Refresh();
             StatusPaidContract();
             ClickButoonAddClaimForm();
 
@@ -137,6 +137,7 @@ namespace CascadeUITest
             DateClaim(dateClaim);
             DateClaimWith(dateStart);
             DateClaimEnd(dateEnd);
+            OutComingDate();
             //ClickCreateFile();
             //Thread.Sleep(6000);
         }
@@ -165,36 +166,131 @@ namespace CascadeUITest
             ClickButtonAddLawSuit();
 
             SelectClaim();
-            if (CheckSelectClaim())
+            if (!CheckSelectClaim())
+            {               
+                CloseDialogLawSuit();
+                CloseFormLawSuit();
+                ClickButtonList();
+                AddClaimPaidContract("20.05.2021", "10.04.2020", "20.04.2021");
+                ClickSaveButtonClaim();
+                driver.Navigate().Refresh();
+                ClickLawSuit();
+                ClickButtonAddLawSuit();
+                SelectClaim();
+
+                if (CheckSelectClaim())
+                {
+                    ClickSelectClaim();
+                    SelectChoiceLawSuit();
+                    SelectDateRefferalToCourt();
+                    SelectSaveLawSuit();
+                    Thread.Sleep(3000);
+                }
+            }
+            ClickSelectClaim();
+            SelectChoiceLawSuit();
+            SelectDateRefferalToCourt();
+            SelectSaveLawSuit();
+            Thread.Sleep(3000);
+        }
+
+        public void RedactionLawSuit()
+        {
+            driver = manager.Driver;
+
+            StatusPaidContract_LawSuit();
+
+            if (!CheckLawSuit())
             {
+                ClickButtonList();
+                AddClaimPaidContract("20.05.2021", "10.04.2020", "20.04.2021");
+                ClickSaveButtonClaim();
+                driver.Navigate().Refresh();
+                ClickLawSuit();
+                ClickButtonAddLawSuit();
+                SelectClaim();
                 ClickSelectClaim();
                 SelectChoiceLawSuit();
                 SelectDateRefferalToCourt();
                 SelectSaveLawSuit();
-
-                if (! CheckSelectClaim())
-                {
-                    return;
-                    //SelectChoiceLawSuit();
-                    //SelectSaveLawSuit();
-                }
-                ClickSelectClaim();
             }
 
-            CloseDialogLawSuit();
-            CloseFormLawSuit();
-            ClickButtonList();
-            AddClaimPaidContract_LawSuit("20.05.2021", "10.04.2020", "20.04.2021");
-            //SelectTenantInFormLawSuit();
-            if (CheckSelectClaim())
+            if (CheckLawSuit())
             {
-                if (!CheckSelectClaim())
-                {
-                    AddTenantInLawSuit("Тест", "ООО", "г Казань, ул Татарстан", "г Казань, ул Татарстан");
-                }
+                SelectLawSuit();
+                ClickRedactionButtonLawSuit();
+                ChangeViewRequest();
+                SelectSaveLawSuit();
+                
+            }
+            Thread.Sleep(3000);
+            return;
+        }
+
+        public void DeleteLawSuit()
+        {
+            driver = manager.Driver;
+
+            StatusPaidContract_LawSuit();
+
+            if (!CheckSummNull())
+            {
+                ClickButtonList();
+                AddClaimPaidContract("20.05.2021", "10.04.2020", "20.04.2021");
+                ClickSaveButtonClaim();
+                driver.Navigate().Refresh();
+                ClickLawSuit();
+                ClickButtonAddLawSuit();
+                SelectClaim();
+                ClickSelectClaim();
+                SelectChoiceLawSuit();
+                SelectDateRefferalToCourt();
+                SelectSaveLawSuit();
             }
 
+            if (CheckSummNull() || CheckLawSuit())
+            {
+                while (CheckSummNull() == true)
+                {
+                    SelectAnyLawSuit();
+                    ClickDeleteButtonLawSuit();
+                    CloseWindowAttentionForDelete();
+                    Thread.Sleep(3000);
+                }
+                
+            }
+            
+            return;
         }
+
+        public void ClickButtonNextPage()
+        {
+            //клик по кнопке навигационной панели >
+
+            driver = manager.Driver;
+
+            driver.FindElement(By.XPath("//a[@data-qtip='Следующая страница']")).Click();
+            Thread.Sleep(2000);
+        }
+
+        public void ClickButtonLastPage()
+        {
+            //клик по кнопке навигационной панели >>
+
+            driver = manager.Driver;
+
+            driver.FindElement(By.XPath("//a[@data-qtip='Последняя страница']")).Click();
+            Thread.Sleep(2000);
+        }
+
+        public void ClickButtonFirstPage()
+        {
+            driver = manager.Driver;
+
+            driver.FindElement(By.XPath("//a[@data-qtip='Первая страница']")).Click();
+            Thread.Sleep(2000);
+        }
+
 
         #region Methods for claim //Методы для составления претензии
         //Методы для составления претензии
@@ -290,6 +386,14 @@ namespace CascadeUITest
             //клик по кнопке "Сохранить"
 
             driver.FindElement(By.XPath("//div[@role='dialog']//div[@role='toolbar']//span[contains(text(),'Сохранить')]")).Click();
+            Thread.Sleep(2000);
+        }
+
+        public void ClickCancelButtonClaim()
+        {
+            //клик по кнопке "Отменить"
+
+            driver.FindElement(By.XPath("//div[@role='dialog']//div[@role='toolbar']//span[contains(text(),'Отменить')]")).Click();
         }
 
         public void DeleteClaim()
@@ -302,6 +406,21 @@ namespace CascadeUITest
             Thread.Sleep(5000);
             CloseWindowClaimDelete();
             Thread.Sleep(4000);
+        }
+
+        public void OutComingDate()
+        {
+            //Проставление даты "исход. письма"
+
+            var dateOutcoming = DateTime.Now.AddDays(-30).ToString("ddMMyyyy");
+
+            //driver.FindElement(By.XPath("(//input[@name='OutcomingDate'])")).Click();
+
+            var elem = driver.FindElement(By.XPath("(//input[@name='OutcomingDate'])"));
+            elem.Click();
+            Thread.Sleep(7000);
+            elem.SendKeys(dateOutcoming);
+            Thread.Sleep(3000);
         }
 
         public bool CheckSummNull()
@@ -395,7 +514,7 @@ namespace CascadeUITest
         {
             //Выбор "ДА" в форме удаления претензии
 
-            driver.FindElement(By.XPath("(//span[contains(text(),'Да')])[37]")).Click();
+            driver.FindElement(By.XPath("//div[contains(text(),'Предупреждение')]/following::span[contains(text(),'Да')]")).Click();
         }
 
         #endregion
@@ -494,6 +613,7 @@ namespace CascadeUITest
 
         public void ClickSelectClaim()
         {
+            //клик в окошечке для чек-бокса (выбор доступных претензий)
 
             driver.FindElement(By.XPath("//span[@class='x-grid-checkcolumn']")).Click();
         }
@@ -521,6 +641,7 @@ namespace CascadeUITest
 
         public void SelectSaveLawSuit()
         {
+            //клик по кнопке "Сохранить" в форме составления иска
 
             driver.FindElement(By.XPath("//div[@role='dialog']//span[contains(text(),'Сохранить')]")).Click();
         }
@@ -539,11 +660,71 @@ namespace CascadeUITest
             //driver.FindElement(By.XPath("")).Click();
         }
 
+        public void SelectLawSuit()
+        {
+            //клик по строчке с задолженностью
+
+            driver.FindElement(By.XPath("//div[contains(text(),'Задолженность')]")).Click();
+        }
+
+        public void SelectAnyLawSuit()
+        {
+            //выбрать любую строчку в спсике доступныз исков
+
+            driver.FindElement(By.XPath("//span[contains(text(),'Вид требования')]/following::tr[@class='  x-grid-row']")).Click();
+        }
+
+        public void ClickRedactionButtonLawSuit()
+        {
+            //клик по кнопке "Редактировать" в исках
+
+            driver.FindElement(By.XPath("(//div[@data-ref='innerCt']/following::span[contains(text(),'Редактировать')])[2]")).Click();
+        }
+
+        public void ClickDeleteButtonLawSuit()
+        { 
+            //клик по кнопке "Удалить" в исках
+
+            driver.FindElement(By.XPath("(//div[@data-ref='innerCt']/following::span[contains(text(),'Удалить')])[7]")).Click();
+            Thread.Sleep(2000);
+        }
+
+        public void ChangeViewRequest()
+        {
+            //изменение "типа требования" в форме иска
+
+            driver.FindElement(By.XPath("//input[@name='RequirementKind']")).Click();
+            Thread.Sleep(1000);
+            driver.FindElement(By.XPath("//li[contains(text(),'Заявление требований кредитора (банкротство)')]")).Click();
+
+
+            //Actions actions = new Actions(driver);
+            //IWebElement elementLocator = driver.FindElement(By.XPath("//input[@name='RequirementKind']"));
+            //actions.DoubleClick(elementLocator).Perform();
+            //Thread.Sleep(3000);
+            //elementLocator.SendKeys("Заявление требование кредитора (банкротство)");
+            //Thread.Sleep(3000);
+        }
+
         public bool CheckSelectClaim()
         {
             //проверка наличия чек-бокс в Исках
 
             return IsElementPresent(By.XPath("//span[@class='x-grid-checkcolumn']"));
+        }
+
+        public bool CheckLawSuit()
+        {
+            //проверка наличия строчки с задолженностью
+
+            return IsElementPresent(By.XPath("//div[contains(text(),'Задолженность')]"));
+        }
+
+        public bool CheckViewRequest()
+        {
+            //проверка наличия строки с видом требования "Заявление требований кредитора (банкротство)"
+
+            return IsElementPresent(By.XPath("//div[contains(text(),'Заявление требований кредитора (банкротство)')]"));
         }
 
         #endregion
@@ -644,33 +825,36 @@ namespace CascadeUITest
         public bool FilterFieldCheck()
         {
             //проверка значения фильтра
-
+            Thread.Sleep(1000);
             return IsElementPresent(By.XPath("(//div[@class='x-grid-cell-inner '])[3]"));
         }
 
         public bool FilterSecondStringCheck()
         {
             //проверка значения поля фильтра "номер договора" для второй строчки. 
-
+            Thread.Sleep(1000);
             return IsElementPresent(By.XPath("((//table[@role='presentation'])[2]//div[@class='x-grid-cell-inner '])[3]"));
         }
 
         public bool CheckStatusContract_Correct()
         {
             //Проверка статуса договора (Действующий)
-
+            Thread.Sleep(1000);
             return IsElementPresent(By.XPath("//div[contains(text(),'Действующий')]"));
-
-
         }
 
         public bool CheckStatusContract_Expired()
         {
             //Проверка статуса договора (истек срок)
+            Thread.Sleep(1000);
+            return IsElementPresent(By.XPath("//div[contains(text(),'Истек срок')]"));             
+        }
 
-            return IsElementPresent(By.XPath("//div[contains(text(),'Истек срок')]"));
-
-             
+        public bool CheckStatusTypeContract()
+        {
+            //Проверка статуса тип договора (Доп.соглашение)
+            Thread.Sleep(1000);
+            return IsElementPresent(By.XPath("//div[contains(text(),'Доп. соглашение')]"));
         }
 
         public void SalaryContragent(string salary)
@@ -682,6 +866,34 @@ namespace CascadeUITest
 
             //return this;
         }
+
+        public bool StatusTypeContractCheck()
+        {
+            //проверка статуса типа договора
+
+            return IsElementPresent(By.XPath("//div[contains(text(),'На проверке')]"));
+        }
+
+        public bool CheckWorkNextPage()
+        {
+            //проверка отбражения следующей страницы пр нажатии на кнопку > (навигац. панель)
+
+            return IsElementPresent(By.XPath("//div[contains(text(),'Данные на отображение 31 - 60')]"));
+        }
+
+        public bool CheckWorkFirstPage()
+        {
+            //проверка отбражения страницы пр нажатии на кнопку << (навигац. панель)
+
+            return IsElementPresent(By.XPath("//div[contains(text(),'Данные на отображение 1 - 30')]"));
+        }
+
+        //public bool CheckWorkLastPage()
+        //{
+
+
+        //    return IsElementPresent(By.XPath("//a[@data-qtip='Последняя страница']"));
+        //}
 
         public void DateStartContragentForm()
         {
@@ -874,12 +1086,15 @@ namespace CascadeUITest
 
         public void RefreshButton()
         {
+            //кнопка "Обновить" в шапке хэдера
+
             Thread.Sleep(3000);
             driver.FindElement(By.XPath("(//div[@role='toolbar']//span[contains(text(),'Обновить')])[1]")).Click();
         }
 
         public void ClickUnloadButton()
         {
+            //кнопка "Выгрузить" в шапке хэдера
 
             Thread.Sleep(3000);
             driver.FindElement(By.XPath("//div[@role='toolbar']//span[contains(text(),'Выгрузить')]")).Click();
@@ -888,6 +1103,8 @@ namespace CascadeUITest
         public  void CloneContract()
         {
             //driver = manager.Driver;
+
+            //клонирование договора (функц.кнопка)
 
             Thread.Sleep(3000);
             driver.Navigate().Refresh();
@@ -899,11 +1116,70 @@ namespace CascadeUITest
 
         }
 
+        public void AddMoreContract()
+        {
+            //добавление доп.соглашения (функ.кнопка)
+
+            Thread.Sleep(3000);
+            driver.Navigate().Refresh();
+            Thread.Sleep(5000);
+            driver.FindElement(By.XPath("//tr[@class='  x-grid-row']")).Click();
+            Thread.Sleep(3000);
+            driver.FindElement(By.XPath("(//div[contains(@class,'x-grid-cell-inner x-grid-cell-inner-action-col')])[1]")).Click();
+            driver.FindElement(By.XPath("//span[contains(text(),'Добавить доп. соглашение')]")).Click();
+        }
+
+        public void RedactionFuncButton()
+        {
+            //Редактирвоание (функц.кнопка)
+
+            Thread.Sleep(3000);
+            driver.Navigate().Refresh();
+            Thread.Sleep(5000);
+            driver.FindElement(By.XPath("//tr[@class='  x-grid-row']")).Click();
+            Thread.Sleep(3000);
+            driver.FindElement(By.XPath("(//div[contains(@class,'x-grid-cell-inner x-grid-cell-inner-action-col')])[1]")).Click();
+            driver.FindElement(By.XPath("//a[@data-ref='itemEl']//span[contains(text(),'Редактировать')]")).Click();
+        }
+
+        public void DeleteFuncButton()
+        {
+
+
+            Thread.Sleep(3000);
+            driver.Navigate().Refresh();
+            Thread.Sleep(5000);
+            driver.FindElement(By.XPath("//tr[@class='  x-grid-row']")).Click();
+            Thread.Sleep(3000);
+            driver.FindElement(By.XPath("(//div[contains(@class,'x-grid-cell-inner x-grid-cell-inner-action-col')])[1]")).Click();
+            driver.FindElement(By.XPath("//a[@data-ref='itemEl']//span[contains(text(),'Удалить')]")).Click();
+            Thread.Sleep(3000);
+            CloseWindowAttentionForDelete();
+        }
+
+        public void ChangeStatusContract()
+        {
+            Thread.Sleep(3000);
+            driver.FindElement(By.XPath("//span[contains(text(),'Статус договора:')]/following::input[1]")).Click();
+            Thread.Sleep(1000);
+            driver.FindElement(By.XPath("//li[contains(text(),'На проверке')]")).Click();
+            ClickSave();
+        }
+
         public void ForCloneContract_ObjectRent(string numberObject)
         {
+
+
             Thread.Sleep(3000);
             ChoiceObjectRent(numberObject);
             ClickSave();
         }
+
+        //public void t()
+        //{
+        //   var e = driver.FindElement(By.XPath("(//tr[contains(@aria-selected,'true')]//div[contains(@class,'x-grid-cell-inner')])[3]"));
+        //    e.Click();
+            
+        //}
     }
 }

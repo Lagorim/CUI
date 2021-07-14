@@ -27,6 +27,16 @@ namespace CascadeUITest
         public string dateEndContract = DateTime.Now.AddYears(2).ToString("ddMMyyyy");
         public string value = new Random().Next(1, 28).ToString();
 
+
+        //public static string numberContract
+        //{
+        //    get
+        //    {
+        //        string v = new Random().Next(1, 9000).ToString();
+        //        return "Test" + v;
+        //    }
+        //}
+
         public BaseHelper(ManagerApp manager)
         {
             this.manager = manager;

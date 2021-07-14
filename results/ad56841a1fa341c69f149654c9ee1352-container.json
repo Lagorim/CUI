@@ -1,0 +1,43 @@
+{
+  "uuid": "3cceba3c-d369-4ac7-a907-1735288f8d0c-tc-0-1000",
+  "name": "CascadeUITest.CheckCreateContract.#12 Формирование файла претензии, проверка формирования файла",
+  "children": [
+    "11a30a18-a1b9-458d-8ebc-a716f0f8f5bf-tr-0-1023"
+  ],
+  "befores": [
+    {
+      "name": "SetupManagerApp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1626263153353,
+      "stop": 1626263153353
+    },
+    {
+      "name": "SetupLogin",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1626263153353,
+      "stop": 1626263153353
+    }
+  ],
+  "afters": [],
+  "links": [],
+  "start": 1626263060151,
+  "stop": 1626263153354
+}

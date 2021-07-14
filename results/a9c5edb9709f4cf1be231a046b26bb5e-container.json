@@ -1,0 +1,45 @@
+{
+  "uuid": "ac99e989-1af1-4cf5-8c28-554218be452f-tc-0-1000",
+  "name": "CascadeUITest.CheckCreateContract.#19 Проверка кнопок навигационной панели >",
+  "children": [
+    "fc16f0d3-64fc-4d47-90e0-07a4271a0833-tr-0-1037"
+  ],
+  "befores": [
+    {
+      "name": "SetupManagerApp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1626263647204,
+      "stop": 1626263647204
+    },
+    {
+      "name": "SetupLogin",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <span id=\"button-1019-btnInnerEl\" data-ref=\"btnInnerEl\" unselectable=\"on\" class=\"x-btn-inner x-btn-inner-default-small\">...</span> is not clickable at point (197, 884). Other element would receive the click: <div role=\"presentation\" class=\"x-mask x-border-box\" style=\"height: 928px; width: 1920px; z-index: 18996; left: 0px; top: 0px;\" id=\"ext-element-378\"></div>\n  (Session info: chrome=90.0.4430.72)",
+        "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.Click()\r\n   at CascadeUITest.LoginHelper.Logout() in C:\\Users\\source\\CascadeUI\\CascadeUI\\CascadeUI\\CascadeUI\\CascadeUI\\AppManager\\LoginHelper.cs:line 69\r\n   at CascadeUITest.LoginHelper.LoginPage(String username, String password) in C:\\Users\\source\\CascadeUI\\CascadeUI\\CascadeUI\\CascadeUI\\CascadeUI\\AppManager\\LoginHelper.cs:line 33\r\n   at CascadeUITest.AuthBaseTest.SetupLogin() in C:\\Users\\source\\CascadeUI\\CascadeUI\\CascadeUI\\CascadeUI\\CascadeUI\\Tests\\AuthBaseTest.cs:line 21"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1626263647204,
+      "stop": 1626263647204
+    }
+  ],
+  "afters": [],
+  "links": [],
+  "start": 1626263646076,
+  "stop": 1626263647205
+}
