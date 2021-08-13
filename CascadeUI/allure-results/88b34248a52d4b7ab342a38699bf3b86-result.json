@@ -1,0 +1,75 @@
+{
+  "uuid": "22d21a0e-48b7-4d5c-9b1c-3b0a58e97eec-tr-0-1053",
+  "historyId": "CascadeUITest.CheckCreateLogin.#01 Проверка валидных данных при логине",
+  "fullName": "CascadeUITest.CheckCreateLogin.#01 Проверка валидных данных при логине",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "15"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-F7IBGNA"
+    },
+    {
+      "name": "testClass",
+      "value": "CascadeUITest.CheckCreateLogin"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckLoginTest_Admin"
+    },
+    {
+      "name": "package",
+      "value": "CascadeUITest.CheckCreateLogin"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Логин"
+    },
+    {
+      "name": "suite",
+      "value": "Логин"
+    },
+    {
+      "name": "feature",
+      "value": "Логин"
+    }
+  ],
+  "links": [],
+  "name": "#01 Проверка валидных данных при логине",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "#01 Проверка валидных данных при логине",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "9a7f5fb37b2b49bc9e128d6cc55e676e-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1626871637303,
+      "stop": 1626871672267
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1626871637303,
+  "stop": 1626871672267
+}

@@ -1,0 +1,43 @@
+{
+  "uuid": "6de6c9d4-040e-4fcc-9602-995d9f5d808d-tc-0-1000",
+  "name": "CascadeUITest.CheckCreateContract.#04 Проверка создания договора - с действующей датой",
+  "children": [
+    "c5272e8a-9762-4053-aab6-8282da1e0e1b-tr-0-1007"
+  ],
+  "befores": [
+    {
+      "name": "SetupManagerApp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627032912611,
+      "stop": 1627032912611
+    },
+    {
+      "name": "SetupLogin",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627032912611,
+      "stop": 1627032912611
+    }
+  ],
+  "afters": [],
+  "links": [],
+  "start": 1627032840267,
+  "stop": 1627032912613
+}

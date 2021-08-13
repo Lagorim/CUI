@@ -1,0 +1,43 @@
+{
+  "uuid": "d2eef103-4d6b-41c6-bfcd-6d6ac25f84cf-tc-0-1066",
+  "name": "CascadeUITest.CheckStaff.#01 Создание сотрудника",
+  "children": [
+    "6fb5a6cd-1683-4c82-ad24-8398438d5a29-tr-0-1067"
+  ],
+  "befores": [
+    {
+      "name": "SetupManagerApp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627371892225,
+      "stop": 1627371892225
+    },
+    {
+      "name": "SetupLogin",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627371892225,
+      "stop": 1627371892225
+    }
+  ],
+  "afters": [],
+  "links": [],
+  "start": 1627371855861,
+  "stop": 1627371892245
+}

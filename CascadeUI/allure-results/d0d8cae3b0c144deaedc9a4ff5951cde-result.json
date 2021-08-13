@@ -1,0 +1,75 @@
+{
+  "uuid": "57a4b42b-9e1e-45e9-93cb-84e6f9eda18a-tr-0-1046",
+  "historyId": "CascadeUITest.CheckCreateContragent.#03 Проверка создания контрагента - не заполнена дата",
+  "fullName": "CascadeUITest.CheckCreateContragent.#03 Проверка создания контрагента - не заполнена дата",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "15"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-F7IBGNA"
+    },
+    {
+      "name": "testClass",
+      "value": "CascadeUITest.CheckCreateContragent"
+    },
+    {
+      "name": "testMethod",
+      "value": "AddContrAgentEmptyDate"
+    },
+    {
+      "name": "package",
+      "value": "CascadeUITest.CheckCreateContragent"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Контрагент"
+    },
+    {
+      "name": "suite",
+      "value": "Контрагент"
+    },
+    {
+      "name": "feature",
+      "value": "Контрагент"
+    }
+  ],
+  "links": [],
+  "name": "#03 Проверка создания контрагента - не заполнена дата",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "#03 Проверка создания контрагента - не заполнена дата",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "7aa86c7a9e074e96bead5144db9a2f1c-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1627044644996,
+      "stop": 1627044681827
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1627044644996,
+  "stop": 1627044681828
+}

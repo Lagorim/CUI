@@ -1,0 +1,43 @@
+{
+  "uuid": "7cc8fd33-3f1f-4b8a-a8fc-cca6a406198c-tc-0-1041",
+  "name": "CascadeUITest.CheckCreateContragent.#04 Отказ от заполнения формы контрагента",
+  "children": [
+    "f48cda3b-b1b8-40c8-aee4-2612f6ddd6b2-tr-0-1048"
+  ],
+  "befores": [
+    {
+      "name": "SetupManagerApp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627044798159,
+      "stop": 1627044798159
+    },
+    {
+      "name": "SetupLogin",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627044798159,
+      "stop": 1627044798159
+    }
+  ],
+  "afters": [],
+  "links": [],
+  "start": 1627044757029,
+  "stop": 1627044798180
+}

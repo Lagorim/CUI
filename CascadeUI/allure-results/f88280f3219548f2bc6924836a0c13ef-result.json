@@ -1,0 +1,79 @@
+{
+  "uuid": "028a6186-5a31-44e4-bb94-0d3e554c22aa-tr-0-1073",
+  "historyId": "CascadeUITest.CheckStaff.#04 Создание пациента и последующая авторизация под ним",
+  "fullName": "CascadeUITest.CheckStaff.#04 Создание пациента и последующая авторизация под ним",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "15"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-F7IBGNA"
+    },
+    {
+      "name": "testClass",
+      "value": "CascadeUITest.CheckStaff"
+    },
+    {
+      "name": "testMethod",
+      "value": "CreateStaffAndAutorization"
+    },
+    {
+      "name": "package",
+      "value": "CascadeUITest.CheckStaff"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Сотрудники"
+    },
+    {
+      "name": "suite",
+      "value": "Сотрудники"
+    },
+    {
+      "name": "feature",
+      "value": "Сотрудники"
+    }
+  ],
+  "links": [],
+  "name": "#04 Создание пациента и последующая авторизация под ним",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <span id=\"button-2416-btnInnerEl\" data-ref=\"btnInnerEl\" unselectable=\"on\" class=\"x-btn-inner x-btn-inner-default-toolbar-small\">...</span> is not clickable at point (1623, 67). Other element would receive the click: <div id=\"toolbar-2413-innerCt\" data-ref=\"innerCt\" role=\"presentation\" class=\"x-box-inner\" style=\"width: 1692px; height: 33px;\">...</div>\n  (Session info: chrome=90.0.4430.72)",
+    "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.Execute(String commandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.Click()\r\n   at CascadeUITest.StaffHelper.ClickDelete() in C:\\Users\\GIT\\Cascade\\CascadeUI\\AppManager\\StaffHelper.cs:line 160\r\n   at CascadeUITest.CheckStaff.CreateStaffAndAutorization() in C:\\Users\\GIT\\Cascade\\CascadeUI\\Tests\\CheckStaff.cs:line 67"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "#04 Создание пациента и последующая авторизация под ним",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <span id=\"button-2416-btnInnerEl\" data-ref=\"btnInnerEl\" unselectable=\"on\" class=\"x-btn-inner x-btn-inner-default-toolbar-small\">...</span> is not clickable at point (1623, 67). Other element would receive the click: <div id=\"toolbar-2413-innerCt\" data-ref=\"innerCt\" role=\"presentation\" class=\"x-box-inner\" style=\"width: 1692px; height: 33px;\">...</div>\n  (Session info: chrome=90.0.4430.72)",
+        "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.Execute(String commandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.Click()\r\n   at CascadeUITest.StaffHelper.ClickDelete() in C:\\Users\\GIT\\Cascade\\CascadeUI\\AppManager\\StaffHelper.cs:line 160\r\n   at CascadeUITest.CheckStaff.CreateStaffAndAutorization() in C:\\Users\\GIT\\Cascade\\CascadeUI\\Tests\\CheckStaff.cs:line 67"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "eded5dd0e63547248ed3c2107ec2e437-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1627393381176,
+      "stop": 1627393473321
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1627393381175,
+  "stop": 1627393473325
+}

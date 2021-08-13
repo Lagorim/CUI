@@ -1,0 +1,43 @@
+{
+  "uuid": "6fc3b7a2-3585-4a6d-9b7f-2f12c7d1ff48-tc-0-1057",
+  "name": "CascadeUITest.CheckPayment.#01 Проверка открытия оборотно-сальдовой ведомости",
+  "children": [
+    "dd469b60-f0eb-4704-b93e-3fdbed2f8dea-tr-0-1058"
+  ],
+  "befores": [
+    {
+      "name": "SetupManagerApp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627041370360,
+      "stop": 1627041370360
+    },
+    {
+      "name": "SetupLogin",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627041370360,
+      "stop": 1627041370360
+    }
+  ],
+  "afters": [],
+  "links": [],
+  "start": 1627041286410,
+  "stop": 1627041370362
+}

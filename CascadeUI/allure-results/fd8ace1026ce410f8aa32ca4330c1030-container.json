@@ -1,0 +1,43 @@
+{
+  "uuid": "e1efdb5d-e541-4907-ab06-f743ddf20582-tc-0-1000",
+  "name": "CascadeUITest.CheckCreateContract.#09 Клонирование договора (функциольные кнопки)",
+  "children": [
+    "896979c7-9a5a-4524-86f3-f1b04f1b4dc0-tr-0-1017"
+  ],
+  "befores": [
+    {
+      "name": "SetupManagerApp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627030087525,
+      "stop": 1627030087525
+    },
+    {
+      "name": "SetupLogin",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627030087525,
+      "stop": 1627030087525
+    }
+  ],
+  "afters": [],
+  "links": [],
+  "start": 1627029986353,
+  "stop": 1627030087526
+}

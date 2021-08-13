@@ -1,0 +1,75 @@
+{
+  "uuid": "3b582306-4713-447e-a936-6dcd88ac4cb1-tr-0-1073",
+  "historyId": "CascadeUITest.CheckStaff.#04 Создание пациента и последующая авторизация под ним",
+  "fullName": "CascadeUITest.CheckStaff.#04 Создание пациента и последующая авторизация под ним",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-F7IBGNA"
+    },
+    {
+      "name": "testClass",
+      "value": "CascadeUITest.CheckStaff"
+    },
+    {
+      "name": "testMethod",
+      "value": "CreateStaffAndAutorization"
+    },
+    {
+      "name": "package",
+      "value": "CascadeUITest.CheckStaff"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Сотрудники"
+    },
+    {
+      "name": "suite",
+      "value": "Сотрудники"
+    },
+    {
+      "name": "feature",
+      "value": "Сотрудники"
+    }
+  ],
+  "links": [],
+  "name": "#04 Создание пациента и последующая авторизация под ним",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "#04 Создание пациента и последующая авторизация под ним",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "182dbfe44da641f6882397c62c080681-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1627392742209,
+      "stop": 1627392792910
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1627392742208,
+  "stop": 1627392792910
+}

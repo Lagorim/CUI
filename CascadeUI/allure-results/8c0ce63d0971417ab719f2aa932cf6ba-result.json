@@ -1,0 +1,79 @@
+{
+  "uuid": "aedbaaa5-8b15-4328-b665-3392e3d4ce9b-tr-0-1037",
+  "historyId": "CascadeUITest.CheckCreateContract.#19 Проверка кнопок навигационной панели >",
+  "fullName": "CascadeUITest.CheckCreateContract.#19 Проверка кнопок навигационной панели >",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-F7IBGNA"
+    },
+    {
+      "name": "testClass",
+      "value": "CascadeUITest.CheckCreateContract"
+    },
+    {
+      "name": "testMethod",
+      "value": "NavigationButtonNextPage"
+    },
+    {
+      "name": "package",
+      "value": "CascadeUITest.CheckCreateContract"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Договор"
+    },
+    {
+      "name": "suite",
+      "value": "Договор"
+    },
+    {
+      "name": "feature",
+      "value": "Договор"
+    }
+  ],
+  "links": [],
+  "name": "#19 Проверка кнопок навигационной панели >",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.NullReferenceException : Object reference not set to an instance of an object.",
+    "trace": "   at CascadeUITest.ContractHelper.ClickButtonNextPage() in C:\\Users\\GIT\\Cascade\\CascadeUI\\AppManager\\ContractHelper.cs:line 277\r\n   at CascadeUITest.CheckCreateContract.NavigationButtonNextPage() in C:\\Users\\GIT\\Cascade\\CascadeUI\\Tests\\CheckCreateContract.cs:line 239"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "#19 Проверка кнопок навигационной панели >",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "System.NullReferenceException : Object reference not set to an instance of an object.",
+        "trace": "   at CascadeUITest.ContractHelper.ClickButtonNextPage() in C:\\Users\\GIT\\Cascade\\CascadeUI\\AppManager\\ContractHelper.cs:line 277\r\n   at CascadeUITest.CheckCreateContract.NavigationButtonNextPage() in C:\\Users\\GIT\\Cascade\\CascadeUI\\Tests\\CheckCreateContract.cs:line 239"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "ee959a8b01c848a6a9f47b8a91d0e440-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1626965819640,
+      "stop": 1626965843652
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1626965819640,
+  "stop": 1626965843653
+}

@@ -1,0 +1,43 @@
+{
+  "uuid": "0b187d30-0aa3-4181-a53a-a902bd77819c-tc-0-1000",
+  "name": "CascadeUITest.CheckCreateContract.#11 Переход во вкладку Претензии - у договора со статусом Нет задолженности",
+  "children": [
+    "fe7c7126-3a40-496e-955d-936c3ad9765d-tr-0-1021"
+  ],
+  "befores": [
+    {
+      "name": "SetupManagerApp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627030155338,
+      "stop": 1627030155338
+    },
+    {
+      "name": "SetupLogin",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627030155338,
+      "stop": 1627030155338
+    }
+  ],
+  "afters": [],
+  "links": [],
+  "start": 1627030124999,
+  "stop": 1627030155339
+}

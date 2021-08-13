@@ -1,0 +1,45 @@
+{
+  "uuid": "8e1e24f4-cc1a-47b5-b125-436565fc0acf-tc-0-1066",
+  "name": "CascadeUITest.CheckStaff.#03 Удаление сотрудника",
+  "children": [
+    "c505206b-f317-4761-9cb6-d654f3c54c71-tr-0-1071"
+  ],
+  "befores": [
+    {
+      "name": "SetupManagerApp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627372379235,
+      "stop": 1627372379235
+    },
+    {
+      "name": "SetupLogin",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <span id=\"button-1019-btnInnerEl\" data-ref=\"btnInnerEl\" unselectable=\"on\" class=\"x-btn-inner x-btn-inner-default-small\">...</span> is not clickable at point (197, 943). Other element would receive the click: <div role=\"presentation\" class=\"x-mask x-border-box\" style=\"height: 964px; width: 1920px; z-index: 18996; left: 0px; top: 0px;\" id=\"ext-element-339\"></div>\n  (Session info: chrome=90.0.4430.72)",
+        "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.Click()\r\n   at CascadeUITest.LoginHelper.Logout() in C:\\Users\\GIT\\Cascade\\CascadeUI\\AppManager\\LoginHelper.cs:line 69\r\n   at CascadeUITest.LoginHelper.LoginPage(String username, String password) in C:\\Users\\GIT\\Cascade\\CascadeUI\\AppManager\\LoginHelper.cs:line 33\r\n   at CascadeUITest.AuthBaseTest.SetupLogin() in C:\\Users\\GIT\\Cascade\\CascadeUI\\Tests\\AuthBaseTest.cs:line 21"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627372379235,
+      "stop": 1627372379235
+    }
+  ],
+  "afters": [],
+  "links": [],
+  "start": 1627372378087,
+  "stop": 1627372379236
+}

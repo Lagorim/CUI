@@ -1,0 +1,79 @@
+{
+  "uuid": "fe2e23a7-95d0-4c21-b8ad-e3804d444162-tr-0-1001",
+  "historyId": "CascadeUITest.CheckCreateContract.#01 Создание договора - с истекшей датой",
+  "fullName": "CascadeUITest.CheckCreateContract.#01 Создание договора - с истекшей датой",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-F7IBGNA"
+    },
+    {
+      "name": "testClass",
+      "value": "CascadeUITest.CheckCreateContract"
+    },
+    {
+      "name": "testMethod",
+      "value": "AddContract"
+    },
+    {
+      "name": "package",
+      "value": "CascadeUITest.CheckCreateContract"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Договор"
+    },
+    {
+      "name": "suite",
+      "value": "Договор"
+    },
+    {
+      "name": "feature",
+      "value": "Договор"
+    }
+  ],
+  "links": [],
+  "name": "#01 Создание договора - с истекшей датой",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.NullReferenceException : Object reference not set to an instance of an object.",
+    "trace": "   at CascadeUITest.ContractHelper.CreateContract(ContractData contract) in C:\\Users\\GIT\\Cascade\\CascadeUI\\AppManager\\ContractHelper.cs:line 37\r\n   at CascadeUITest.CheckCreateContract.AddContract() in C:\\Users\\GIT\\Cascade\\CascadeUI\\Tests\\CheckCreateContract.cs:line 35"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "#01 Создание договора - с истекшей датой",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "System.NullReferenceException : Object reference not set to an instance of an object.",
+        "trace": "   at CascadeUITest.ContractHelper.CreateContract(ContractData contract) in C:\\Users\\GIT\\Cascade\\CascadeUI\\AppManager\\ContractHelper.cs:line 37\r\n   at CascadeUITest.CheckCreateContract.AddContract() in C:\\Users\\GIT\\Cascade\\CascadeUI\\Tests\\CheckCreateContract.cs:line 35"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "9ea7d4d2720f4ed4b946b88070d9ceae-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1626963008660,
+      "stop": 1626963032663
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1626963008660,
+  "stop": 1626963032667
+}

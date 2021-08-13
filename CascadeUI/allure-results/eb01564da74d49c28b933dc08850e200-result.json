@@ -1,0 +1,75 @@
+{
+  "uuid": "e4bfb845-429a-4005-8574-73c4e5f7f399-tr-0-1025",
+  "historyId": "CascadeUITest.CheckCreateContract.#13 Сохранение претензии - с файлом и удаление",
+  "fullName": "CascadeUITest.CheckCreateContract.#13 Сохранение претензии - с файлом и удаление",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-F7IBGNA"
+    },
+    {
+      "name": "testClass",
+      "value": "CascadeUITest.CheckCreateContract"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAddClaimSaveAndDelete"
+    },
+    {
+      "name": "package",
+      "value": "CascadeUITest.CheckCreateContract"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Договор"
+    },
+    {
+      "name": "suite",
+      "value": "Договор"
+    },
+    {
+      "name": "feature",
+      "value": "Договор"
+    }
+  ],
+  "links": [],
+  "name": "#13 Сохранение претензии - с файлом и удаление",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "#13 Сохранение претензии - с файлом и удаление",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "335fc735750e45828f76e39cfa8d50bf-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1626965102165,
+      "stop": 1626965218106
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1626965102165,
+  "stop": 1626965218106
+}

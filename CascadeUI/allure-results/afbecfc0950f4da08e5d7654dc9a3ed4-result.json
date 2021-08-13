@@ -1,0 +1,79 @@
+{
+  "uuid": "482d1741-de76-44db-9ab8-71317189ea3e-tr-0-1073",
+  "historyId": "CascadeUITest.CheckStaff.#04 Создание пациента и полседующая авторизация под ним",
+  "fullName": "CascadeUITest.CheckStaff.#04 Создание пациента и полседующая авторизация под ним",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "15"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-F7IBGNA"
+    },
+    {
+      "name": "testClass",
+      "value": "CascadeUITest.CheckStaff"
+    },
+    {
+      "name": "testMethod",
+      "value": "CreateStaffAndAutorization"
+    },
+    {
+      "name": "package",
+      "value": "CascadeUITest.CheckStaff"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Сотрудники"
+    },
+    {
+      "name": "suite",
+      "value": "Сотрудники"
+    },
+    {
+      "name": "feature",
+      "value": "Сотрудники"
+    }
+  ],
+  "links": [],
+  "name": "#04 Создание пациента и полседующая авторизация под ним",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//b[contains(text(),'Автотест- Тест-')]\"}\n  (Session info: chrome=90.0.4430.72)",
+    "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.Execute(String commandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.FindElementByXPath(String xpath)\r\n   at OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.FindElement(By by)\r\n   at CascadeUITest.StaffHelper.IsLoggedInTrue(String login, String password) in C:\\Users\\GIT\\Cascade\\CascadeUI\\AppManager\\StaffHelper.cs:line 251\r\n   at CascadeUITest.CheckStaff.CreateStaffAndAutorization() in C:\\Users\\GIT\\Cascade\\CascadeUI\\Tests\\CheckStaff.cs:line 64"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "#04 Создание пациента и полседующая авторизация под ним",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//b[contains(text(),'Автотест- Тест-')]\"}\n  (Session info: chrome=90.0.4430.72)",
+        "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.Execute(String commandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.FindElementByXPath(String xpath)\r\n   at OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.FindElement(By by)\r\n   at CascadeUITest.StaffHelper.IsLoggedInTrue(String login, String password) in C:\\Users\\GIT\\Cascade\\CascadeUI\\AppManager\\StaffHelper.cs:line 251\r\n   at CascadeUITest.CheckStaff.CreateStaffAndAutorization() in C:\\Users\\GIT\\Cascade\\CascadeUI\\Tests\\CheckStaff.cs:line 64"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "befa6d8654dd4635b1cc4fa25731a28e-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1627385984632,
+      "stop": 1627386107239
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1627385984632,
+  "stop": 1627386107243
+}

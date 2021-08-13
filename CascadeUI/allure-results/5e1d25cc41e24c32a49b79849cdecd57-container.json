@@ -1,0 +1,93 @@
+{
+  "uuid": "05e86a7f-41de-44a8-85f1-edc389e70171-tc-0-1066",
+  "name": "CascadeUITest.CheckStaff.#04 Создание пациента и последующая авторизация под ним",
+  "children": [
+    "7c730ec9-6bfa-49d8-94dc-9b302a9cdcbd-tr-0-1073"
+  ],
+  "befores": [
+    {
+      "name": "SetupManagerApp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627395147589,
+      "stop": 1627395147589
+    },
+    {
+      "name": "SetupLogin",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627395147589,
+      "stop": 1627395147589
+    }
+  ],
+  "afters": [
+    {
+      "name": "Dispose",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627395147589,
+      "stop": 1627395147589
+    },
+    {
+      "name": "TearDown",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "TearDown : OpenQA.Selenium.StaleElementReferenceException : stale element reference: element is not attached to the page document\n  (Session info: chrome=90.0.4430.72)",
+        "trace": "--TearDown\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.Execute(String commandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.Click()\r\n   at CascadeUITest.StaffHelper.SelectStaff() in C:\\Users\\GIT\\Cascade\\CascadeUI\\AppManager\\StaffHelper.cs:line 136\r\n   at CascadeUITest.CheckStaff.TearDown() in C:\\Users\\GIT\\Cascade\\CascadeUI\\Tests\\CheckStaff.cs:line 36"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627395147589,
+      "stop": 1627395147589
+    },
+    {
+      "name": "OneTimeTearDown",
+      "status": "none",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "It's not possible to get status of OneTimeTearDown",
+        "trace": "See Allure.NUnit wiki"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627395147590,
+      "stop": 1627395147590
+    }
+  ],
+  "links": [],
+  "start": 1627395096633,
+  "stop": 1627395147619
+}

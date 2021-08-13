@@ -1,0 +1,79 @@
+{
+  "uuid": "70344313-20cf-40ef-b0dd-5f114ca1557a-tr-0-1055",
+  "historyId": "CascadeUITest.CheckCreateLogin.#02 Проверка не валидных данных при логине",
+  "fullName": "CascadeUITest.CheckCreateLogin.#02 Проверка не валидных данных при логине",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-F7IBGNA"
+    },
+    {
+      "name": "testClass",
+      "value": "CascadeUITest.CheckCreateLogin"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckLoginNotValid"
+    },
+    {
+      "name": "package",
+      "value": "CascadeUITest.CheckCreateLogin"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Логин"
+    },
+    {
+      "name": "suite",
+      "value": "Логин"
+    },
+    {
+      "name": "feature",
+      "value": "Логин"
+    }
+  ],
+  "links": [],
+  "name": "#02 Проверка не валидных данных при логине",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.StaleElementReferenceException : stale element reference: element is not attached to the page document\n  (Session info: chrome=90.0.4430.72)",
+    "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.Execute(String commandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.get_Text()\r\n   at CascadeUITest.LoginHelper.IsLoggedIn(String username, String password) in C:\\Users\\GIT\\Cascade\\CascadeUI\\AppManager\\LoginHelper.cs:line 52\r\n   at CascadeUITest.LoginHelper.LoginPage(String username, String password) in C:\\Users\\GIT\\Cascade\\CascadeUI\\AppManager\\LoginHelper.cs:line 28\r\n   at CascadeUITest.CheckCreateLogin.CheckLoginNotValid() in C:\\Users\\GIT\\Cascade\\CascadeUI\\Tests\\CheckLogin.cs:line 57"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "#02 Проверка не валидных данных при логине",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.StaleElementReferenceException : stale element reference: element is not attached to the page document\n  (Session info: chrome=90.0.4430.72)",
+        "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.Execute(String commandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.get_Text()\r\n   at CascadeUITest.LoginHelper.IsLoggedIn(String username, String password) in C:\\Users\\GIT\\Cascade\\CascadeUI\\AppManager\\LoginHelper.cs:line 52\r\n   at CascadeUITest.LoginHelper.LoginPage(String username, String password) in C:\\Users\\GIT\\Cascade\\CascadeUI\\AppManager\\LoginHelper.cs:line 28\r\n   at CascadeUITest.CheckCreateLogin.CheckLoginNotValid() in C:\\Users\\GIT\\Cascade\\CascadeUI\\Tests\\CheckLogin.cs:line 57"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "06085482d6ba433fa6908c2ceeccc1d4-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1626959780842,
+      "stop": 1626959804947
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1626959780842,
+  "stop": 1626959804947
+}

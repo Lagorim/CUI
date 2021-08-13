@@ -1,0 +1,59 @@
+{
+  "uuid": "afc35263-6142-4f5a-ae34-24e67a104c34-tc-0-1052",
+  "name": "CascadeUITest.CheckCreateLogin.#02 Проверка не валидных данных при логине",
+  "children": [
+    "85b26c0d-e3a0-4469-91fb-0e6c68a4e1c0-tr-0-1055"
+  ],
+  "befores": [
+    {
+      "name": "SetupManagerApp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1626960762728,
+      "stop": 1626960762728
+    },
+    {
+      "name": "SetupLogin",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1626960762728,
+      "stop": 1626960762728
+    }
+  ],
+  "afters": [
+    {
+      "name": "Dispose",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1626960762728,
+      "stop": 1626960762728
+    }
+  ],
+  "links": [],
+  "start": 1626960718458,
+  "stop": 1626960762729
+}

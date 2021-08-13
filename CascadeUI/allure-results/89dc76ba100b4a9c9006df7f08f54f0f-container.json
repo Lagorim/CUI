@@ -1,0 +1,45 @@
+{
+  "uuid": "7a6cf8c6-264d-4e95-b34a-38952e8eceb3-tc-0-1052",
+  "name": "CascadeUITest.CheckCreateLogin.#01 Проверка валидных данных при логине",
+  "children": [
+    "a82dfac6-3119-41aa-9a16-5fe78f693667-tr-0-1053"
+  ],
+  "befores": [
+    {
+      "name": "SetupManagerApp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1626866443312,
+      "stop": 1626866443312
+    },
+    {
+      "name": "SetupLogin",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.WebDriverException : Session timed out or not found",
+        "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)\r\n   at OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)\r\n   at CascadeUITest.BaseHelper.IsElementPresent(By by) in C:\\Users\\GIT\\Cascade\\CascadeUI\\AppManager\\BaseHelper.cs:line 50\r\n   at CascadeUITest.LoginHelper.IsLoggedIn() in C:\\Users\\GIT\\Cascade\\CascadeUI\\AppManager\\LoginHelper.cs:line 47\r\n   at CascadeUITest.LoginHelper.LoginPage(String username, String password) in C:\\Users\\GIT\\Cascade\\CascadeUI\\AppManager\\LoginHelper.cs:line 26\r\n   at CascadeUITest.AuthBaseTest.SetupLogin() in C:\\Users\\GIT\\Cascade\\CascadeUI\\Tests\\AuthBaseTest.cs:line 21"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1626866443312,
+      "stop": 1626866443312
+    }
+  ],
+  "afters": [],
+  "links": [],
+  "start": 1626866294326,
+  "stop": 1626866443315
+}

@@ -1,0 +1,75 @@
+{
+  "uuid": "654bde90-77c3-445b-b563-7543489f3dc0-tr-0-1021",
+  "historyId": "CascadeUITest.CheckCreateContract.#11 Переход во вкладку Претензии - у договора со статусом Нет задолженности",
+  "fullName": "CascadeUITest.CheckCreateContract.#11 Переход во вкладку Претензии - у договора со статусом Нет задолженности",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-F7IBGNA"
+    },
+    {
+      "name": "testClass",
+      "value": "CascadeUITest.CheckCreateContract"
+    },
+    {
+      "name": "testMethod",
+      "value": "StatusPaidContract"
+    },
+    {
+      "name": "package",
+      "value": "CascadeUITest.CheckCreateContract"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Договор"
+    },
+    {
+      "name": "suite",
+      "value": "Договор"
+    },
+    {
+      "name": "feature",
+      "value": "Договор"
+    }
+  ],
+  "links": [],
+  "name": "#11 Переход во вкладку Претензии - у договора со статусом Нет задолженности",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "#11 Переход во вкладку Претензии - у договора со статусом Нет задолженности",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "f00e7278b80c4f8ba57be595c7f15d99-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1626964966764,
+      "stop": 1626965003043
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1626964966764,
+  "stop": 1626965003043
+}

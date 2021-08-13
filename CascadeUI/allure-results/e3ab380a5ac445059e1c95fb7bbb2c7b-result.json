@@ -1,0 +1,79 @@
+{
+  "uuid": "0cd00557-f1e5-4449-9afc-1f6985446fdc-tr-0-1042",
+  "historyId": "CascadeUITest.CheckCreateContragent.#01 Проверка создания контрагента",
+  "fullName": "CascadeUITest.CheckCreateContragent.#01 Проверка создания контрагента",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "15"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-F7IBGNA"
+    },
+    {
+      "name": "testClass",
+      "value": "CascadeUITest.CheckCreateContragent"
+    },
+    {
+      "name": "testMethod",
+      "value": "AddContragent"
+    },
+    {
+      "name": "package",
+      "value": "CascadeUITest.CheckCreateContragent"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Контрагент"
+    },
+    {
+      "name": "suite",
+      "value": "Контрагент"
+    },
+    {
+      "name": "feature",
+      "value": "Контрагент"
+    }
+  ],
+  "links": [],
+  "name": "#01 Проверка создания контрагента",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[contains(text(),'Контрагент:')]/following::div[@class='x-form-trigger x-form-trigger-default x-form-search-trigger x-form-search-trigger-default x-trigger-index-1 ']\"}\n  (Session info: chrome=90.0.4430.72)",
+    "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)\r\n   at OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)\r\n   at CascadeUITest.ContrAgentHelper.Contragent() in C:\\Users\\GIT\\Cascade\\CascadeUI\\AppManager\\ContrAgentHelper.cs:line 125\r\n   at CascadeUITest.ContrAgentHelper.CheckCreateTenant(ContrAgentData contrAgent) in C:\\Users\\GIT\\Cascade\\CascadeUI\\AppManager\\ContrAgentHelper.cs:line 28\r\n   at CascadeUITest.CheckCreateContragent.AddContragent() in C:\\Users\\GIT\\Cascade\\CascadeUI\\Tests\\CheckCreateContragent.cs:line 30"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "#01 Проверка создания контрагента",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[contains(text(),'Контрагент:')]/following::div[@class='x-form-trigger x-form-trigger-default x-form-search-trigger x-form-search-trigger-default x-trigger-index-1 ']\"}\n  (Session info: chrome=90.0.4430.72)",
+        "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)\r\n   at OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)\r\n   at CascadeUITest.ContrAgentHelper.Contragent() in C:\\Users\\GIT\\Cascade\\CascadeUI\\AppManager\\ContrAgentHelper.cs:line 125\r\n   at CascadeUITest.ContrAgentHelper.CheckCreateTenant(ContrAgentData contrAgent) in C:\\Users\\GIT\\Cascade\\CascadeUI\\AppManager\\ContrAgentHelper.cs:line 28\r\n   at CascadeUITest.CheckCreateContragent.AddContragent() in C:\\Users\\GIT\\Cascade\\CascadeUI\\Tests\\CheckCreateContragent.cs:line 30"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "356d9cd0d588453fba33d865e7539a69-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1627041831647,
+      "stop": 1627041880277
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1627041831647,
+  "stop": 1627041880282
+}

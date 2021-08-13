@@ -1,0 +1,59 @@
+{
+  "uuid": "a3f9eee8-1631-4894-bccc-36bbefa61904-tc-0-1057",
+  "name": "CascadeUITest.CheckPayment.#02 Проверка изменения статуса договора с 'Нет Задолженности' на 'Требует направление претензии' ",
+  "children": [
+    "d503d806-1d8f-40cb-bca4-cec2b8f79359-tr-0-1060"
+  ],
+  "befores": [
+    {
+      "name": "SetupManagerApp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627400973209,
+      "stop": 1627400973209
+    },
+    {
+      "name": "SetupLogin",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627400973209,
+      "stop": 1627400973209
+    }
+  ],
+  "afters": [
+    {
+      "name": "Dispose",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627400973209,
+      "stop": 1627400973209
+    }
+  ],
+  "links": [],
+  "start": 1627400919707,
+  "stop": 1627400973211
+}

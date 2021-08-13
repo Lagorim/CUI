@@ -1,0 +1,80 @@
+{
+  "uuid": "7115f19b-46a6-430e-83a8-243879a8fb3c-tr-0-1039",
+  "historyId": "CascadeUITest.CheckCreateContract.#20 Проверка кнопок навигационной панели >> и <<",
+  "fullName": "CascadeUITest.CheckCreateContract.#20 Проверка кнопок навигационной панели >> и <<",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "15"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-F7IBGNA"
+    },
+    {
+      "name": "testClass",
+      "value": "CascadeUITest.CheckCreateContract"
+    },
+    {
+      "name": "testMethod",
+      "value": "NavigationButtonLastPage"
+    },
+    {
+      "name": "package",
+      "value": "CascadeUITest.CheckCreateContract"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Договор"
+    },
+    {
+      "name": "suite",
+      "value": "Договор"
+    },
+    {
+      "name": "feature",
+      "value": "Договор"
+    }
+  ],
+  "links": [],
+  "name": "#20 Проверка кнопок навигационной панели >> и <<",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.NullReferenceException : Object reference not set to an instance of an object.",
+    "trace": "   at CascadeUITest.AuthBaseTest.SetupLogin() in C:\\Users\\GIT\\Cascade\\CascadeUI\\Tests\\AuthBaseTest.cs:line 21"
+  },
+  "stage": "finished",
+  "description": "\nSetupLogin SetUp method failed\n",
+  "steps": [
+    {
+      "name": "#20 Проверка кнопок навигационной панели >> и << skipped because of SetupManagerApp failure",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "System.NullReferenceException : Object reference not set to an instance of an object.",
+        "trace": "   at CascadeUITest.AuthBaseTest.SetupLogin() in C:\\Users\\GIT\\Cascade\\CascadeUI\\Tests\\AuthBaseTest.cs:line 21"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "73efbebfe0634c70937993d5f107df09-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1626956788063,
+      "stop": 1626956815520
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1626956788062,
+  "stop": 1626956815525
+}

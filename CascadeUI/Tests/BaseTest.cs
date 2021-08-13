@@ -12,19 +12,20 @@ namespace CascadeUITest
     {
 
 
-        protected ManagerApp app;
+        public ManagerApp app;
 
-        public ManagerApp Driver { get; }
+        public ManagerApp Driver { get; set; }
 
-        public BaseTest()
-        {
-            Driver = ManagerApp.GetInstance();
-        }
+        //public BaseTest()
+        //{
+        //    Driver = ManagerApp.GetInstance();
+        //}
 
         public void Dispose()
         {
-            Driver.Driver.Quit();
-            Driver.Driver.Dispose();
+            Thread.Sleep(5000);
+            app.Driver.Quit();
+            app.Driver.Dispose();
         }
 
         [SetUp]
@@ -32,5 +33,6 @@ namespace CascadeUITest
         {
             app = ManagerApp.GetInstance();
         }
+        
     }
 }

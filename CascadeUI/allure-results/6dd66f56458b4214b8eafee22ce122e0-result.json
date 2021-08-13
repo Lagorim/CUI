@@ -1,0 +1,75 @@
+{
+  "uuid": "8798b87e-e020-4ea7-a63d-43a0c37dcdff-tr-0-1023",
+  "historyId": "CascadeUITest.CheckCreateContract.#12 Формирование файла претензии, проверка формирования файла",
+  "fullName": "CascadeUITest.CheckCreateContract.#12 Формирование файла претензии, проверка формирования файла",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-F7IBGNA"
+    },
+    {
+      "name": "testClass",
+      "value": "CascadeUITest.CheckCreateContract"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckAddClaimFile"
+    },
+    {
+      "name": "package",
+      "value": "CascadeUITest.CheckCreateContract"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Договор"
+    },
+    {
+      "name": "suite",
+      "value": "Договор"
+    },
+    {
+      "name": "feature",
+      "value": "Договор"
+    }
+  ],
+  "links": [],
+  "name": "#12 Формирование файла претензии, проверка формирования файла",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "#12 Формирование файла претензии, проверка формирования файла",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "3e7fdc72c1634384b634d06694a08f77-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1626965003044,
+      "stop": 1626965102164
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1626965003044,
+  "stop": 1626965102164
+}

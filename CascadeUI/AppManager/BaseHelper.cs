@@ -27,15 +27,31 @@ namespace CascadeUITest
         public string dateEndContract = DateTime.Now.AddYears(2).ToString("ddMMyyyy");
         public string value = new Random().Next(1, 28).ToString();
 
+        public string surname ="Автотест";
+        public string name = "Тест";
+        public string login = RandomLogin();
+        public string password = _Random();
 
-        //public static string numberContract
-        //{
-        //    get
-        //    {
-        //        string v = new Random().Next(1, 9000).ToString();
-        //        return "Test" + v;
-        //    }
-        //}
+
+        public static string RandomLogin(int n = 7)
+        {
+            string s = "", symb = "ABCDEFGHIKLMNOPQRSTVXYZabcdefghiklmnopqrstvxyz";
+            Random rnd = new Random();
+
+            for (int i = 0; i<n; i++)
+                s += symb[rnd.Next(0, symb.Length)];
+            return s;
+        }
+
+        public static string _Random(int n = 11)
+        {
+            string s = "", symb = "ABCDEFGHIKLMNOPQRSTVXYZabcdefghiklmnopqrstvxyz0123456789";
+            Random rnd = new Random();
+
+            for (int i = 0; i < n; i++)
+                s += symb[rnd.Next(0, symb.Length)];
+            return s;
+        }
 
         public BaseHelper(ManagerApp manager)
         {

@@ -1,0 +1,59 @@
+{
+  "uuid": "c1b1ed38-35e9-413d-921b-20dc4597e872-tc-0-1000",
+  "name": "CascadeUITest.CheckCreateContract.#07 Проверка редактирования (функциональные кнопки)",
+  "children": [
+    "0826147e-d4e8-4279-9130-020b50aedbb5-tr-0-1013"
+  ],
+  "befores": [
+    {
+      "name": "SetupManagerApp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627640265636,
+      "stop": 1627640265636
+    },
+    {
+      "name": "SetupLogin",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627640265636,
+      "stop": 1627640265636
+    }
+  ],
+  "afters": [
+    {
+      "name": "Dispose",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627640265636,
+      "stop": 1627640265636
+    }
+  ],
+  "links": [],
+  "start": 1627640216289,
+  "stop": 1627640265658
+}

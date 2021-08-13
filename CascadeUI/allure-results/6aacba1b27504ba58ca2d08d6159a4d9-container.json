@@ -1,0 +1,63 @@
+{
+  "uuid": "21f0ba21-297c-40d2-8af8-473206c9b32a-tc-0-1000",
+  "name": "CascadeUITest.CheckCreateContract.#20 Проверка кнопок навигационной панели >> и <<",
+  "children": [
+    "06260c3d-4f7b-40b4-b270-0a8562d4afa6-tr-0-1039"
+  ],
+  "befores": [
+    {
+      "name": "SetupManagerApp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1626949727236,
+      "stop": 1626949727236
+    },
+    {
+      "name": "SetupLogin",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "System.NullReferenceException : Object reference not set to an instance of an object.\r\nTearDown : System.NullReferenceException : Object reference not set to an instance of an object.",
+        "trace": "   at CascadeUITest.AuthBaseTest.SetupLogin() in C:\\Users\\GIT\\Cascade\\CascadeUI\\Tests\\AuthBaseTest.cs:line 21\r\n--TearDown\r\n   at CascadeUITest.AuthBaseTest.Dispose() in C:\\Users\\GIT\\Cascade\\CascadeUI\\Tests\\AuthBaseTest.cs:line 28"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1626949727236,
+      "stop": 1626949727236
+    }
+  ],
+  "afters": [
+    {
+      "name": "Dispose",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "System.NullReferenceException : Object reference not set to an instance of an object.\r\nTearDown : System.NullReferenceException : Object reference not set to an instance of an object.",
+        "trace": "   at CascadeUITest.AuthBaseTest.SetupLogin() in C:\\Users\\GIT\\Cascade\\CascadeUI\\Tests\\AuthBaseTest.cs:line 21\r\n--TearDown\r\n   at CascadeUITest.AuthBaseTest.Dispose() in C:\\Users\\GIT\\Cascade\\CascadeUI\\Tests\\AuthBaseTest.cs:line 28"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1626949727237,
+      "stop": 1626949727237
+    }
+  ],
+  "links": [],
+  "start": 1626949712199,
+  "stop": 1626949727261
+}

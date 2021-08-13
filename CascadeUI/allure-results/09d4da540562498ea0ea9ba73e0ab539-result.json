@@ -1,0 +1,80 @@
+{
+  "uuid": "7f25459c-e03f-47e8-a3a2-b5bc0d59a53c-tr-0-1053",
+  "historyId": "CascadeUITest.CheckCreateLogin.#01 Проверка валидных данных при логине",
+  "fullName": "CascadeUITest.CheckCreateLogin.#01 Проверка валидных данных при логине",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "15"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-F7IBGNA"
+    },
+    {
+      "name": "testClass",
+      "value": "CascadeUITest.CheckCreateLogin"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckLoginTest_Admin"
+    },
+    {
+      "name": "package",
+      "value": "CascadeUITest.CheckCreateLogin"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Логин"
+    },
+    {
+      "name": "suite",
+      "value": "Логин"
+    },
+    {
+      "name": "feature",
+      "value": "Логин"
+    }
+  ],
+  "links": [],
+  "name": "#01 Проверка валидных данных при логине",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.NullReferenceException : Object reference not set to an instance of an object.",
+    "trace": "   at CascadeUITest.AuthBaseTest.SetupLogin() in C:\\Users\\GIT\\Cascade\\CascadeUI\\Tests\\AuthBaseTest.cs:line 21"
+  },
+  "stage": "finished",
+  "description": "\nSetupLogin SetUp method failed\n",
+  "steps": [
+    {
+      "name": "#01 Проверка валидных данных при логине skipped because of SetupManagerApp failure",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "System.NullReferenceException : Object reference not set to an instance of an object.",
+        "trace": "   at CascadeUITest.AuthBaseTest.SetupLogin() in C:\\Users\\GIT\\Cascade\\CascadeUI\\Tests\\AuthBaseTest.cs:line 21"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "0bfe18b2de05496da6273156d7f72edf-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1626948524032,
+      "stop": 1626948529673
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1626948524032,
+  "stop": 1626948529674
+}

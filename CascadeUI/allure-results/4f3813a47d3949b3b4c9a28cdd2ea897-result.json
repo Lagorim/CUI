@@ -1,0 +1,75 @@
+{
+  "uuid": "a73a8886-ad1f-46a5-aa5c-a91771d6f0fc-tr-0-1044",
+  "historyId": "CascadeUITest.CheckCreateContragent.#02 Проверка создания контрагента - не заполнена поле контрагент",
+  "fullName": "CascadeUITest.CheckCreateContragent.#02 Проверка создания контрагента - не заполнена поле контрагент",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-F7IBGNA"
+    },
+    {
+      "name": "testClass",
+      "value": "CascadeUITest.CheckCreateContragent"
+    },
+    {
+      "name": "testMethod",
+      "value": "AddContragentEmpty"
+    },
+    {
+      "name": "package",
+      "value": "CascadeUITest.CheckCreateContragent"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Контрагент"
+    },
+    {
+      "name": "suite",
+      "value": "Контрагент"
+    },
+    {
+      "name": "feature",
+      "value": "Контрагент"
+    }
+  ],
+  "links": [],
+  "name": "#02 Проверка создания контрагента - не заполнена поле контрагент",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "#02 Проверка создания контрагента - не заполнена поле контрагент",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "4e263eb9eda049debe6a13faec12c282-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1627396905062,
+      "stop": 1627396939923
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1627396905062,
+  "stop": 1627396939923
+}

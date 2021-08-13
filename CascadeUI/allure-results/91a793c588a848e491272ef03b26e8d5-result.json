@@ -1,0 +1,75 @@
+{
+  "uuid": "a992e3c6-c9d9-4f9c-ba20-60f53e85cf06-tr-0-1001",
+  "historyId": "CascadeUITest.CheckCreateContract.#01 Создание договора - с истекшей датой",
+  "fullName": "CascadeUITest.CheckCreateContract.#01 Создание договора - с истекшей датой",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-F7IBGNA"
+    },
+    {
+      "name": "testClass",
+      "value": "CascadeUITest.CheckCreateContract"
+    },
+    {
+      "name": "testMethod",
+      "value": "AddContract"
+    },
+    {
+      "name": "package",
+      "value": "CascadeUITest.CheckCreateContract"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Договор"
+    },
+    {
+      "name": "suite",
+      "value": "Договор"
+    },
+    {
+      "name": "feature",
+      "value": "Договор"
+    }
+  ],
+  "links": [],
+  "name": "#01 Создание договора - с истекшей датой",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "#01 Создание договора - с истекшей датой",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "bcb3ad127990475ab3c0931ac05d491d-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1627395385463,
+      "stop": 1627395449694
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1627395385463,
+  "stop": 1627395449697
+}

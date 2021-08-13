@@ -1,0 +1,79 @@
+{
+  "uuid": "aa7d8198-9a77-409b-8745-cd9e4ece6bf5-tr-0-1044",
+  "historyId": "CascadeUITest.CheckCreateContragent.#02 Проверка создания контрагента - не заполнена поле контрагент",
+  "fullName": "CascadeUITest.CheckCreateContragent.#02 Проверка создания контрагента - не заполнена поле контрагент",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "15"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-F7IBGNA"
+    },
+    {
+      "name": "testClass",
+      "value": "CascadeUITest.CheckCreateContragent"
+    },
+    {
+      "name": "testMethod",
+      "value": "AddContragentEmpty"
+    },
+    {
+      "name": "package",
+      "value": "CascadeUITest.CheckCreateContragent"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Контрагент"
+    },
+    {
+      "name": "suite",
+      "value": "Контрагент"
+    },
+    {
+      "name": "feature",
+      "value": "Контрагент"
+    }
+  ],
+  "links": [],
+  "name": "#02 Проверка создания контрагента - не заполнена поле контрагент",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "  Expected: False\r\n  But was:  True\r\n",
+    "trace": "   at CascadeUITest.CheckCreateContragent.AddContragentEmpty() in C:\\Users\\GIT\\Cascade\\CascadeUI\\Tests\\CheckCreateContragent.cs:line 42\r\n"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "#02 Проверка создания контрагента - не заполнена поле контрагент",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "  Expected: False\r\n  But was:  True\r\n",
+        "trace": "   at CascadeUITest.CheckCreateContragent.AddContragentEmpty() in C:\\Users\\GIT\\Cascade\\CascadeUI\\Tests\\CheckCreateContragent.cs:line 42\r\n"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "14a01696412d482d8444b5fafc941b3d-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1627043728974,
+      "stop": 1627043838260
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1627043728974,
+  "stop": 1627043838264
+}

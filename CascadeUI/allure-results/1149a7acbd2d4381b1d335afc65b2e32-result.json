@@ -1,0 +1,75 @@
+{
+  "uuid": "503b5a79-008e-467c-8ab4-0e42c8fb4311-tr-0-1013",
+  "historyId": "CascadeUITest.CheckCreateContract.#07 Проверка редактирования (функциональные кнопки)",
+  "fullName": "CascadeUITest.CheckCreateContract.#07 Проверка редактирования (функциональные кнопки)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-F7IBGNA"
+    },
+    {
+      "name": "testClass",
+      "value": "CascadeUITest.CheckCreateContract"
+    },
+    {
+      "name": "testMethod",
+      "value": "RedactionContractFuncButton"
+    },
+    {
+      "name": "package",
+      "value": "CascadeUITest.CheckCreateContract"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Договор"
+    },
+    {
+      "name": "suite",
+      "value": "Договор"
+    },
+    {
+      "name": "feature",
+      "value": "Договор"
+    }
+  ],
+  "links": [],
+  "name": "#07 Проверка редактирования (функциональные кнопки)",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "#07 Проверка редактирования (функциональные кнопки)",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "8ef253e6c7734b66ac2a8aa37c74e305-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1627032964767,
+      "stop": 1627033007121
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1627032964767,
+  "stop": 1627033007121
+}

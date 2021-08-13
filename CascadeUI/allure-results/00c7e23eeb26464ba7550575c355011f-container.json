@@ -1,0 +1,59 @@
+{
+  "uuid": "e78de439-0dc1-481f-88a4-2e851c32c7f1-tc-0-1000",
+  "name": "CascadeUITest.CheckCreateContract.#16 Добавление иска",
+  "children": [
+    "cf7dd3ff-5c98-4384-b0e4-a1c169426d7c-tr-0-1031"
+  ],
+  "befores": [
+    {
+      "name": "SetupManagerApp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1626965591405,
+      "stop": 1626965591405
+    },
+    {
+      "name": "SetupLogin",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1626965591405,
+      "stop": 1626965591405
+    }
+  ],
+  "afters": [
+    {
+      "name": "Dispose",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1626965591405,
+      "stop": 1626965591405
+    }
+  ],
+  "links": [],
+  "start": 1626965464475,
+  "stop": 1626965591406
+}

@@ -1,0 +1,78 @@
+{
+  "uuid": "f866c95a-757f-4d28-859b-4f5f9467e7a6-tc-0-1066",
+  "name": "CascadeUITest.CheckStaff.#03 Удаление сотрудника",
+  "children": [
+    "c91b94c9-574c-42a3-b06e-7b48bfeebf4e-tr-0-1071"
+  ],
+  "befores": [
+    {
+      "name": "SetupManagerApp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627374566324,
+      "stop": 1627374566324
+    },
+    {
+      "name": "SetupLogin",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.WebDriverException : Session timed out or not found",
+        "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)\r\n   at OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)\r\n   at CascadeUITest.BaseHelper.IsElementPresent(By by) in C:\\Users\\GIT\\Cascade\\CascadeUI\\AppManager\\BaseHelper.cs:line 56\r\n   at CascadeUITest.LoginHelper.IsLoggedIn() in C:\\Users\\GIT\\Cascade\\CascadeUI\\AppManager\\LoginHelper.cs:line 47\r\n   at CascadeUITest.LoginHelper.LoginPage(String username, String password) in C:\\Users\\GIT\\Cascade\\CascadeUI\\AppManager\\LoginHelper.cs:line 26\r\n   at CascadeUITest.AuthBaseTest.SetupLogin() in C:\\Users\\GIT\\Cascade\\CascadeUI\\Tests\\AuthBaseTest.cs:line 21"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627374566324,
+      "stop": 1627374566324
+    }
+  ],
+  "afters": [
+    {
+      "name": "Dispose",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627374566324,
+      "stop": 1627374566324
+    },
+    {
+      "name": "OneTimeTearDown",
+      "status": "none",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "It's not possible to get status of OneTimeTearDown",
+        "trace": "See Allure.NUnit wiki"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627374566324,
+      "stop": 1627374566324
+    }
+  ],
+  "links": [],
+  "start": 1627374560103,
+  "stop": 1627374566325
+}

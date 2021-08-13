@@ -1,0 +1,59 @@
+{
+  "uuid": "8e802c89-6604-4a5a-942b-242cd3bd5469-tc-0-1000",
+  "name": "CascadeUITest.CheckCreateContract.#15 Редактирование претензии",
+  "children": [
+    "2b398a0e-43b6-422f-83a4-3f1b5f12c285-tr-0-1029"
+  ],
+  "befores": [
+    {
+      "name": "SetupManagerApp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627474662054,
+      "stop": 1627474662054
+    },
+    {
+      "name": "SetupLogin",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627474662054,
+      "stop": 1627474662054
+    }
+  ],
+  "afters": [
+    {
+      "name": "Dispose",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627474662055,
+      "stop": 1627474662055
+    }
+  ],
+  "links": [],
+  "start": 1627474531394,
+  "stop": 1627474662073
+}

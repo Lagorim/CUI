@@ -1,0 +1,79 @@
+{
+  "uuid": "d41772f0-bf57-4ff0-b5ba-75d8305ef998-tr-0-1060",
+  "historyId": "CascadeUITest.CheckPayment.#02 Проверка изменения статуса договора с 'Нет Задолженности' на 'Требует направление претензии' ",
+  "fullName": "CascadeUITest.CheckPayment.#02 Проверка изменения статуса договора с 'Нет Задолженности' на 'Требует направление претензии' ",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-F7IBGNA"
+    },
+    {
+      "name": "testClass",
+      "value": "CascadeUITest.CheckPayment"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckChangeStatus"
+    },
+    {
+      "name": "package",
+      "value": "CascadeUITest.CheckPayment"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Оборотно-сальдовая ведомость"
+    },
+    {
+      "name": "suite",
+      "value": "Оборотно-сальдовая ведомость"
+    },
+    {
+      "name": "feature",
+      "value": "Оборотно-сальдовая ведомость"
+    }
+  ],
+  "links": [],
+  "name": "#02 Проверка изменения статуса договора с 'Нет Задолженности' на 'Требует направление претензии' ",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds\r\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[contains(text(),'Требует направления претензии')]\"}\n  (Session info: chrome=90.0.4430.72)",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at CascadeUITest.PaymentHelper.ContractClaim() in C:\\Users\\GIT\\Cascade\\CascadeUI\\AppManager\\PaymentHelper.cs:line 123\r\n   at CascadeUITest.CheckPayment.CheckChangeStatus() in C:\\Users\\GIT\\Cascade\\CascadeUI\\Tests\\CheckPayment.cs:line 41\r\n--NoSuchElementException\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)\r\n   at CascadeUITest.PaymentHelper.<>c.<ContractClaim>b__14_0(IWebDriver e) in C:\\Users\\GIT\\Cascade\\CascadeUI\\AppManager\\PaymentHelper.cs:line 123\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "#02 Проверка изменения статуса договора с 'Нет Задолженности' на 'Требует направление претензии' ",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds\r\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[contains(text(),'Требует направления претензии')]\"}\n  (Session info: chrome=90.0.4430.72)",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at CascadeUITest.PaymentHelper.ContractClaim() in C:\\Users\\GIT\\Cascade\\CascadeUI\\AppManager\\PaymentHelper.cs:line 123\r\n   at CascadeUITest.CheckPayment.CheckChangeStatus() in C:\\Users\\GIT\\Cascade\\CascadeUI\\Tests\\CheckPayment.cs:line 41\r\n--NoSuchElementException\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)\r\n   at CascadeUITest.PaymentHelper.<>c.<ContractClaim>b__14_0(IWebDriver e) in C:\\Users\\GIT\\Cascade\\CascadeUI\\AppManager\\PaymentHelper.cs:line 123\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "a869b2b9aa364aafbecf2e4c61909987-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1627041370363,
+      "stop": 1627041417365
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1627041370363,
+  "stop": 1627041417365
+}

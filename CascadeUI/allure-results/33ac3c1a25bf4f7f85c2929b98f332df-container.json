@@ -1,0 +1,43 @@
+{
+  "uuid": "36f10e1c-25da-40b9-8a70-5c98a9387b52-tc-0-1000",
+  "name": "CascadeUITest.CheckCreateContract.#10 Добавление дополнительного соглашения (функциональные кнопки)",
+  "children": [
+    "e6eacebd-f223-42af-ba28-ab32ca96372c-tr-0-1019"
+  ],
+  "befores": [
+    {
+      "name": "SetupManagerApp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627033196577,
+      "stop": 1627033196577
+    },
+    {
+      "name": "SetupLogin",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627033196577,
+      "stop": 1627033196577
+    }
+  ],
+  "afters": [],
+  "links": [],
+  "start": 1627033150137,
+  "stop": 1627033196578
+}

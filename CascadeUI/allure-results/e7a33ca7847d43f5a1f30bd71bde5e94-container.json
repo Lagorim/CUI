@@ -1,0 +1,43 @@
+{
+  "uuid": "22926ceb-e65a-44d3-98fb-d79792408436-tc-0-1052",
+  "name": "CascadeUITest.CheckCreateLogin.#01 Проверка валидных данных при логине",
+  "children": [
+    "64cc62f1-4ffa-420e-ad08-1a25a66cb443-tr-0-1053"
+  ],
+  "befores": [
+    {
+      "name": "SetupManagerApp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1626940130918,
+      "stop": 1626940130918
+    },
+    {
+      "name": "SetupLogin",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1626940130918,
+      "stop": 1626940130918
+    }
+  ],
+  "afters": [],
+  "links": [],
+  "start": 1626940085101,
+  "stop": 1626940130919
+}

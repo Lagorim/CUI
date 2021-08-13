@@ -1,0 +1,43 @@
+{
+  "uuid": "ca09fee6-9337-4f1b-9c12-66b49a10d793-tc-0-1000",
+  "name": "CascadeUITest.CheckCreateContract.#20 Проверка кнопок навигационной панели >> и <<",
+  "children": [
+    "cfae7411-d664-4b8e-92f7-e5962a10123d-tr-0-1039"
+  ],
+  "befores": [
+    {
+      "name": "SetupManagerApp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1626958637105,
+      "stop": 1626958637105
+    },
+    {
+      "name": "SetupLogin",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1626958637105,
+      "stop": 1626958637105
+    }
+  ],
+  "afters": [],
+  "links": [],
+  "start": 1626958593796,
+  "stop": 1626958637126
+}

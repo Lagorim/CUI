@@ -1,0 +1,79 @@
+{
+  "uuid": "742b269e-dbc7-45b8-923d-5b02b6825d71-tr-0-1033",
+  "historyId": "CascadeUITest.CheckCreateContract.#17 Редактирование иска",
+  "fullName": "CascadeUITest.CheckCreateContract.#17 Редактирование иска",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-F7IBGNA"
+    },
+    {
+      "name": "testClass",
+      "value": "CascadeUITest.CheckCreateContract"
+    },
+    {
+      "name": "testMethod",
+      "value": "ReadactionLawSuit"
+    },
+    {
+      "name": "package",
+      "value": "CascadeUITest.CheckCreateContract"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Договор"
+    },
+    {
+      "name": "suite",
+      "value": "Договор"
+    },
+    {
+      "name": "feature",
+      "value": "Договор"
+    }
+  ],
+  "links": [],
+  "name": "#17 Редактирование иска",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "  Expected: True\r\n  But was:  False\r\n",
+    "trace": "   at CascadeUITest.CheckCreateContract.ReadactionLawSuit() in C:\\Users\\GIT\\Cascade\\CascadeUI\\Tests\\CheckCreateContract.cs:line 223\r\n"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "#17 Редактирование иска",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "  Expected: True\r\n  But was:  False\r\n",
+        "trace": "   at CascadeUITest.CheckCreateContract.ReadactionLawSuit() in C:\\Users\\GIT\\Cascade\\CascadeUI\\Tests\\CheckCreateContract.cs:line 223\r\n"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "8c4397eb44214d87ba51346624d32ef8-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1627469311102,
+      "stop": 1627469440325
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1627469311101,
+  "stop": 1627469440328
+}

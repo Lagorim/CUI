@@ -1,0 +1,79 @@
+{
+  "uuid": "5b6aeac7-2765-4ff6-a6be-5355b2dcc227-tr-0-1019",
+  "historyId": "CascadeUITest.CheckCreateContract.#10 Добавление дополнительного соглашения (функциональные кнопки)",
+  "fullName": "CascadeUITest.CheckCreateContract.#10 Добавление дополнительного соглашения (функциональные кнопки)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-F7IBGNA"
+    },
+    {
+      "name": "testClass",
+      "value": "CascadeUITest.CheckCreateContract"
+    },
+    {
+      "name": "testMethod",
+      "value": "AddMoreContract"
+    },
+    {
+      "name": "package",
+      "value": "CascadeUITest.CheckCreateContract"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Договор"
+    },
+    {
+      "name": "suite",
+      "value": "Договор"
+    },
+    {
+      "name": "feature",
+      "value": "Договор"
+    }
+  ],
+  "links": [],
+  "name": "#10 Добавление дополнительного соглашения (функциональные кнопки)",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.NullReferenceException : Object reference not set to an instance of an object.",
+    "trace": "   at CascadeUITest.ContractHelper.AddMoreContract() in C:\\Users\\GIT\\Cascade\\CascadeUI\\AppManager\\ContractHelper.cs:line 1133\r\n   at CascadeUITest.CheckCreateContract.AddMoreContract() in C:\\Users\\GIT\\Cascade\\CascadeUI\\Tests\\CheckCreateContract.cs:line 125"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "#10 Добавление дополнительного соглашения (функциональные кнопки)",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "System.NullReferenceException : Object reference not set to an instance of an object.",
+        "trace": "   at CascadeUITest.ContractHelper.AddMoreContract() in C:\\Users\\GIT\\Cascade\\CascadeUI\\AppManager\\ContractHelper.cs:line 1133\r\n   at CascadeUITest.CheckCreateContract.AddMoreContract() in C:\\Users\\GIT\\Cascade\\CascadeUI\\Tests\\CheckCreateContract.cs:line 125"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "3bf49b439fcb45828706d7e296c3eec8-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1626964939676,
+      "stop": 1626964966763
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1626964939676,
+  "stop": 1626964966763
+}

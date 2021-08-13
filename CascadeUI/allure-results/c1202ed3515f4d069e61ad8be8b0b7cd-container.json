@@ -1,0 +1,43 @@
+{
+  "uuid": "70fb0093-bb7f-4dc7-9f4c-efe7fe2c3388-tc-0-1041",
+  "name": "CascadeUITest.CheckCreateContragent.#05 Проверка создания арендатора - с суммой 0 ",
+  "children": [
+    "ff503ee3-5309-4e97-9bb0-cdeeac75f766-tr-0-1050"
+  ],
+  "befores": [
+    {
+      "name": "SetupManagerApp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627045159278,
+      "stop": 1627045159278
+    },
+    {
+      "name": "SetupLogin",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627045159278,
+      "stop": 1627045159278
+    }
+  ],
+  "afters": [],
+  "links": [],
+  "start": 1627045127491,
+  "stop": 1627045159280
+}

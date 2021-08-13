@@ -1,0 +1,75 @@
+{
+  "uuid": "09be2a6f-e7f3-4d9c-b6b7-842fb4ececae-tr-0-1037",
+  "historyId": "CascadeUITest.CheckCreateContract.#19 Проверка кнопок навигационной панели >",
+  "fullName": "CascadeUITest.CheckCreateContract.#19 Проверка кнопок навигационной панели >",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-F7IBGNA"
+    },
+    {
+      "name": "testClass",
+      "value": "CascadeUITest.CheckCreateContract"
+    },
+    {
+      "name": "testMethod",
+      "value": "NavigationButtonNextPage"
+    },
+    {
+      "name": "package",
+      "value": "CascadeUITest.CheckCreateContract"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Договор"
+    },
+    {
+      "name": "suite",
+      "value": "Договор"
+    },
+    {
+      "name": "feature",
+      "value": "Договор"
+    }
+  ],
+  "links": [],
+  "name": "#19 Проверка кнопок навигационной панели >",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "#19 Проверка кнопок навигационной панели >",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "f8191c0d15684202bece5f8086a91367-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1626866162002,
+      "stop": 1626866181995
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1626866162002,
+  "stop": 1626866181999
+}

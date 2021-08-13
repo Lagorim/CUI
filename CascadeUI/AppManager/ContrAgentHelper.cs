@@ -35,6 +35,7 @@ namespace CascadeUITest
 
         public ContrAgentHelper CheckCreateEmptyTenant(ContrAgentData contrAgent)
         {
+            driver = manager.Driver;
 
             manager.Contract.ClickOnContracts();
             manager.Contract.ButtonAdd();
@@ -42,22 +43,28 @@ namespace CascadeUITest
 
             DateStartContragentForm();
             SalaryContragent(contrAgent.Salary);
+            manager.Contract.CloseDialogLawSuit();
             return this;
         }
 
         public ContrAgentHelper CheckCreateEmptyDate(ContrAgentData contrAgent)
         {
+            driver = manager.Driver;
+
             manager.Contract.ClickOnContracts();
             manager.Contract.ButtonAdd();
             AddTenant();
             Contragent();
 
             SalaryContragent(contrAgent.Salary);
+            manager.Contract.CloseDialogLawSuit();
             return this;
         }
 
         public ContrAgentHelper CloseFormContragent(ContrAgentData contrAgent)
         {
+            driver = manager.Driver;
+
             manager.Contract.ClickOnContracts();
             manager.Contract.ButtonAdd();
             AddTenant();
@@ -69,6 +76,8 @@ namespace CascadeUITest
 
         public ContrAgentHelper AddContragentsummNull(ContrAgentData contrAgent)
         {
+            driver = manager.Driver;
+
             manager.Contract.ClickOnContracts();
             manager.Contract.ButtonAdd();
             AddTenant();
@@ -95,7 +104,7 @@ namespace CascadeUITest
             //Ввод суммы (форма контрагента)
 
             driver.FindElement(By.XPath("(//input[@name='Amount'])[3]")).SendKeys(value);
-            driver.FindElement(By.XPath("(//span[contains(text(),'Сохранить')])[22]")).Click();
+            driver.FindElement(By.XPath("//div[contains(text(),'Арендатор')]/following::span[contains(text(),'Сохранить')]")).Click();
 
             return this;
         }
@@ -115,7 +124,7 @@ namespace CascadeUITest
         {
             //Найти контрагента
 
-            driver.FindElement(By.XPath("//span[contains(text(),'Контрагент:')]/following::div[@class='x-form-trigger x-form-trigger-default x-form-search-trigger x-form-search-trigger-default x-trigger-index-1 ']")).Click();
+            driver.FindElement(By.XPath("(//div//span[contains(text(),'Контрагент:')]/following::div[@role='presentation'])[4]")).Click();
             Thread.Sleep(3000);
             driver.FindElement(By.XPath("(//tr[@class='  x-grid-row']//td[@role='gridcell']//span[@class='x-grid-checkcolumn'])[1]")).Click();
             driver.FindElement(By.XPath("//span[contains(text(),'Выбрать')]")).Click();
@@ -137,6 +146,11 @@ namespace CascadeUITest
             //Кликнуть кнопку "Добавить"
 
             driver.FindElement(By.XPath("(//span[contains(text(),'Добавить')])[1]")).Click();
+        }
+
+        public bool CheckSummContragent(string summ)
+        {
+            return IsElementPresent(By.XPath("//div[contains(text(),'" + summ + "')]"));
         }
     }
 }

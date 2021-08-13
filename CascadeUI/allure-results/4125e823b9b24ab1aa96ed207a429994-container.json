@@ -1,0 +1,43 @@
+{
+  "uuid": "e2e6cf4b-e121-4f97-8d70-6757091e4ce3-tc-0-1000",
+  "name": "CascadeUITest.CheckCreateContract.#08 Проверка удаления (функциональные кнопки)",
+  "children": [
+    "cc3d7c17-1e8b-47fd-b4fd-d85eaeb590ff-tr-0-1015"
+  ],
+  "befores": [
+    {
+      "name": "SetupManagerApp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627029986351,
+      "stop": 1627029986351
+    },
+    {
+      "name": "SetupLogin",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627029986351,
+      "stop": 1627029986351
+    }
+  ],
+  "afters": [],
+  "links": [],
+  "start": 1627029943849,
+  "stop": 1627029986352
+}

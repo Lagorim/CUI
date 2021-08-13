@@ -1,0 +1,79 @@
+{
+  "uuid": "fca7f9ab-de06-43f3-a907-4e96fa1f4a84-tr-0-1003",
+  "historyId": "CascadeUITest.CheckCreateContract.#02 Редактирование договора",
+  "fullName": "CascadeUITest.CheckCreateContract.#02 Редактирование договора",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-F7IBGNA"
+    },
+    {
+      "name": "testClass",
+      "value": "CascadeUITest.CheckCreateContract"
+    },
+    {
+      "name": "testMethod",
+      "value": "RedactionContract"
+    },
+    {
+      "name": "package",
+      "value": "CascadeUITest.CheckCreateContract"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Договор"
+    },
+    {
+      "name": "suite",
+      "value": "Договор"
+    },
+    {
+      "name": "feature",
+      "value": "Договор"
+    }
+  ],
+  "links": [],
+  "name": "#02 Редактирование договора",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.NullReferenceException : Object reference not set to an instance of an object.",
+    "trace": "   at CascadeUITest.ContractHelper.RedactionContract() in C:\\Users\\GIT\\Cascade\\CascadeUI\\AppManager\\ContractHelper.cs:line 758\r\n   at CascadeUITest.CheckCreateContract.RedactionContract() in C:\\Users\\GIT\\Cascade\\CascadeUI\\Tests\\CheckCreateContract.cs:line 47"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "#02 Редактирование договора",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "System.NullReferenceException : Object reference not set to an instance of an object.",
+        "trace": "   at CascadeUITest.ContractHelper.RedactionContract() in C:\\Users\\GIT\\Cascade\\CascadeUI\\AppManager\\ContractHelper.cs:line 758\r\n   at CascadeUITest.CheckCreateContract.RedactionContract() in C:\\Users\\GIT\\Cascade\\CascadeUI\\Tests\\CheckCreateContract.cs:line 47"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "30a934e613034285874aabe547f236d0-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1626962469118,
+      "stop": 1626962496261
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1626962469118,
+  "stop": 1626962496261
+}

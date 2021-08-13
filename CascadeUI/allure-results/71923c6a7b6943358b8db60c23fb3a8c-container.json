@@ -1,0 +1,59 @@
+{
+  "uuid": "43d7bfc7-adce-43d5-aa52-115456ed5500-tc-0-1000",
+  "name": "CascadeUITest.CheckCreateContract.#05 Обновление договоров",
+  "children": [
+    "ea0f71d5-0dda-4e22-ba12-e90ffbe5ef43-tr-0-1009"
+  ],
+  "befores": [
+    {
+      "name": "SetupManagerApp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1626964748661,
+      "stop": 1626964748661
+    },
+    {
+      "name": "SetupLogin",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1626964748661,
+      "stop": 1626964748661
+    }
+  ],
+  "afters": [
+    {
+      "name": "Dispose",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1626964748661,
+      "stop": 1626964748661
+    }
+  ],
+  "links": [],
+  "start": 1626964721544,
+  "stop": 1626964748665
+}

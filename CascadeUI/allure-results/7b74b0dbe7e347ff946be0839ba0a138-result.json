@@ -1,0 +1,79 @@
+{
+  "uuid": "e1b0c878-1df0-44e1-9da5-10be3c86b4cc-tr-0-1044",
+  "historyId": "CascadeUITest.CheckCreateContragent.#02 Проверка создания контрагента - не заполнена поле контрагент",
+  "fullName": "CascadeUITest.CheckCreateContragent.#02 Проверка создания контрагента - не заполнена поле контрагент",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "15"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-F7IBGNA"
+    },
+    {
+      "name": "testClass",
+      "value": "CascadeUITest.CheckCreateContragent"
+    },
+    {
+      "name": "testMethod",
+      "value": "AddContragentEmpty"
+    },
+    {
+      "name": "package",
+      "value": "CascadeUITest.CheckCreateContragent"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Контрагент"
+    },
+    {
+      "name": "suite",
+      "value": "Контрагент"
+    },
+    {
+      "name": "feature",
+      "value": "Контрагент"
+    }
+  ],
+  "links": [],
+  "name": "#02 Проверка создания контрагента - не заполнена поле контрагент",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "  Expected: False\r\n  But was:  True\r\n",
+    "trace": "   at CascadeUITest.CheckCreateContragent.AddContragentEmpty()\r\n"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "#02 Проверка создания контрагента - не заполнена поле контрагент",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "  Expected: False\r\n  But was:  True\r\n",
+        "trace": "   at CascadeUITest.CheckCreateContragent.AddContragentEmpty()\r\n"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "fc533fbb739d4bc68219f928cb39ffcc-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1627044008794,
+      "stop": 1627044103844
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1627044008794,
+  "stop": 1627044103849
+}

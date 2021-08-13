@@ -1,0 +1,59 @@
+{
+  "uuid": "614ca1bd-4a85-4d8c-9d38-57648f9839e3-tc-0-1041",
+  "name": "CascadeUITest.CheckCreateContragent.#02 Проверка создания контрагента - не заполнена поле контрагент",
+  "children": [
+    "a73a8886-ad1f-46a5-aa5c-a91771d6f0fc-tr-0-1044"
+  ],
+  "befores": [
+    {
+      "name": "SetupManagerApp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627396939923,
+      "stop": 1627396939923
+    },
+    {
+      "name": "SetupLogin",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627396939923,
+      "stop": 1627396939923
+    }
+  ],
+  "afters": [
+    {
+      "name": "Dispose",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627396939923,
+      "stop": 1627396939923
+    }
+  ],
+  "links": [],
+  "start": 1627396905062,
+  "stop": 1627396939924
+}

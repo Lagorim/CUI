@@ -19,6 +19,8 @@ namespace CascadeUITest
         string currentFile = string.Empty;
         static string name = string.Empty;
 
+        
+
         public ContractHelper(ManagerApp manager) : base(manager)
         {
         }
@@ -117,17 +119,21 @@ namespace CascadeUITest
         public void StatusPaidContract_LawSuit()
         {
             //проверка перехода во вкладку "Претензии" у договора со статусом "Нет задолженности" и переход в Иски
+            driver = manager.Driver;
 
             Thread.Sleep(5000);
             StatusPaid();
             Thread.Sleep(6000);
             RedactionClickButton();
             ClickLawSuit();
+            Thread.Sleep(6000);
         }
 
         public void AddClaimPaidContract(string dateClaim, string dateStart, string dateEnd)
         {
             //Добавление претензии в статусе договора "Нет задолженности"
+            driver = manager.Driver;
+
             driver.Navigate().Refresh();
             StatusPaidContract();
             ClickButoonAddClaimForm();
@@ -144,6 +150,8 @@ namespace CascadeUITest
 
         public void AddClaimPaidContract_LawSuit(string dateClaim, string dateStart, string dateEnd)
         {
+            driver = manager.Driver;
+
             StatusPaidContract();
             //ClickButoonAddClaimForm();
             ClickButtonAddClaimForm_LawSuit();
@@ -187,6 +195,7 @@ namespace CascadeUITest
                     Thread.Sleep(3000);
                 }
             }
+            Thread.Sleep(3000);
             ClickSelectClaim();
             SelectChoiceLawSuit();
             SelectDateRefferalToCourt();
@@ -217,6 +226,7 @@ namespace CascadeUITest
 
             if (CheckLawSuit())
             {
+                Thread.Sleep(3000);
                 SelectLawSuit();
                 ClickRedactionButtonLawSuit();
                 ChangeViewRequest();
@@ -233,6 +243,10 @@ namespace CascadeUITest
 
             StatusPaidContract_LawSuit();
 
+            //driver.Navigate().Refresh();
+            
+            //ClickLawSuit();
+            //Thread.Sleep(3000);
             if (!CheckSummNull())
             {
                 ClickButtonList();
@@ -246,27 +260,41 @@ namespace CascadeUITest
                 SelectChoiceLawSuit();
                 SelectDateRefferalToCourt();
                 SelectSaveLawSuit();
+
+                Thread.Sleep(3000);
+                while (CheckSummNull() == true)
+                {
+                    //driver.Navigate().Refresh();
+                    //ClickLawSuit();
+                    SelectAnyLawSuit();
+                    ClickDeleteButtonLawSuit();
+                    CloseWindowAttentionForDelete();
+                    Thread.Sleep(3000);
+                }
             }
 
             if (CheckSummNull() || CheckLawSuit())
             {
                 while (CheckSummNull() == true)
                 {
+                    //driver.Navigate().Refresh();
+                    //ClickLawSuit();
                     SelectAnyLawSuit();
                     ClickDeleteButtonLawSuit();
                     CloseWindowAttentionForDelete();
                     Thread.Sleep(3000);
+
                 }
-                
+
             }
-            
+            Thread.Sleep(3000);
             return;
         }
 
         public void ClickButtonNextPage()
         {
             //клик по кнопке навигационной панели >
-
+            
             driver = manager.Driver;
 
             driver.FindElement(By.XPath("//a[@data-qtip='Следующая страница']")).Click();
@@ -276,7 +304,6 @@ namespace CascadeUITest
         public void ClickButtonLastPage()
         {
             //клик по кнопке навигационной панели >>
-
             driver = manager.Driver;
 
             driver.FindElement(By.XPath("//a[@data-qtip='Последняя страница']")).Click();
@@ -285,6 +312,7 @@ namespace CascadeUITest
 
         public void ClickButtonFirstPage()
         {
+            //клик по кнопке навигационной панели <<
             driver = manager.Driver;
 
             driver.FindElement(By.XPath("//a[@data-qtip='Первая страница']")).Click();
@@ -376,6 +404,7 @@ namespace CascadeUITest
         public void ClickCreateFile()
         {
             //клик по кнопке "Сформировать файл"
+            driver = manager.Driver;
 
             driver.FindElement(By.XPath("//span[contains(text(),'Сформировать файл')]")).Click();
             Thread.Sleep(6000);
@@ -392,6 +421,7 @@ namespace CascadeUITest
         public void ClickCancelButtonClaim()
         {
             //клик по кнопке "Отменить"
+            driver = manager.Driver;
 
             driver.FindElement(By.XPath("//div[@role='dialog']//div[@role='toolbar']//span[contains(text(),'Отменить')]")).Click();
         }
@@ -399,6 +429,7 @@ namespace CascadeUITest
         public void DeleteClaim()
         {
             //удаление Претензии
+            driver = manager.Driver;
 
             Thread.Sleep(5000);
             driver.FindElement(By.XPath("(//div[@class='x-grid-item-container'])[6]//tr[@class='  x-grid-row']")).Click();
@@ -413,8 +444,6 @@ namespace CascadeUITest
             //Проставление даты "исход. письма"
 
             var dateOutcoming = DateTime.Now.AddDays(-30).ToString("ddMMyyyy");
-
-            //driver.FindElement(By.XPath("(//input[@name='OutcomingDate'])")).Click();
 
             var elem = driver.FindElement(By.XPath("(//input[@name='OutcomingDate'])"));
             elem.Click();
@@ -441,6 +470,8 @@ namespace CascadeUITest
         {
             //клик по кнопке "Редактировать" в претензиях
 
+            driver = manager.Driver;
+
             Thread.Sleep(5000);
             driver.FindElement(By.XPath("(//div[@class='x-grid-item-container'])[6]//tr[@class='  x-grid-row']")).Click();
             driver.FindElement(By.XPath("(//div[@class='x-panel-bodyWrap']//span[contains(text(),'Редактировать')])[2]")).Click();
@@ -450,6 +481,7 @@ namespace CascadeUITest
 
         public void ChangeClaim(string conclusion)
         {
+            driver = manager.Driver;
 
             Thread.Sleep(3000);
             driver.FindElement(By.XPath("//span[contains(text(),'Требование:')]/following::div[@class='x-form-trigger x-form-trigger-default x-form-arrow-trigger x-form-arrow-trigger-default  ']")).Click();
@@ -460,6 +492,8 @@ namespace CascadeUITest
 
         public bool ChangeNameClaim(string conclusion)
         {
+            driver = manager.Driver;
+
             Thread.Sleep(3000);
             driver.FindElement(By.XPath("//input[@name='Requirement']")).Click();
             //driver.FindElement(By.XPath("//span[contains(text(),'Требование:')]/following::div[@class='x-form-trigger x-form-trigger-default x-form-arrow-trigger x-form-arrow-trigger-default  ']")).Click();
@@ -469,7 +503,7 @@ namespace CascadeUITest
 
         public void CheckDownloadFileClaim()
         {
-
+            driver = manager.Driver;
             //driver.Navigate().GoToUrl("/home/selenium/Downloads/");
 
             string expectedFile = @"/home/selenium/Downloads/download";
@@ -483,7 +517,7 @@ namespace CascadeUITest
 
             FileInfo fileinfo = new FileInfo(expectedFile);
             Assert.AreEqual(fileinfo.Name, "download");
-            Assert.AreEqual(fileinfo.FullName, @"C:\home\selenium\Downloads\download");
+            //Assert.AreEqual(fileinfo.FullName, @"C:\home\selenium\Downloads\download");
             //string Path = options.AddUserProfilePreference("download.default_directory", @"/home/selenium/Downloads");
             //options.AddUserProfilePreference("download.default_directory", @"/home/selenium/Downloads");
 
@@ -525,6 +559,7 @@ namespace CascadeUITest
         public void AddTenantInLawSuit(string fullName, string orgForm, string jurAddress, string postAddress)
         {
             //добавление "Арендатора" в исках 
+            driver = manager.Driver;
 
             driver.FindElement(By.XPath("(//a[@role='button']//span[contains(text(),'Добавить')])[22]")).Click();
             CreateFullNameTenantLawSuit(fullName);
@@ -588,6 +623,7 @@ namespace CascadeUITest
         {
             //переход во вкладку "Иски"
 
+            Thread.Sleep(1000);
             driver.FindElement(By.XPath("//span[contains(text(),'Иски')]")).Click();
         }
 
@@ -596,6 +632,7 @@ namespace CascadeUITest
             //клик по кнопке "добавить" в исках
 
             driver.FindElement(By.XPath("(//div[contains(text(),'Договоры /')]/following::div[@data-ref='bodyWrap']//a//span[contains(text(),'Добавить')])[3]")).Click();
+            Thread.Sleep(3000);
         }
 
         public void SelectClaim()
@@ -603,18 +640,24 @@ namespace CascadeUITest
             //клик по кнопке "Претензия" и ее выбор, в форме добавления Исков
 
             driver.FindElement(By.XPath("(//span[contains(text(),'Претензия:')]/following::div[@role='presentation'])[4]")).Click();
+            Thread.Sleep(3000);
         }
 
         public void SelectTenantInFormLawSuit()
         {
             //клик по кнопке "Арендатор" и ее выбор, в форме добавления Исков
+            driver = manager.Driver;
+
             driver.FindElement(By.XPath("((//span[@class='x-form-item-label-text'][contains(text(),'Арендатор:')])[3]/following::div[@role='presentation'])[4]")).Click();
         }
 
         public void ClickSelectClaim()
         {
             //клик в окошечке для чек-бокса (выбор доступных претензий)
+            
+            driver = manager.Driver;
 
+            Thread.Sleep(3000);
             driver.FindElement(By.XPath("//span[@class='x-grid-checkcolumn']")).Click();
         }
 
@@ -672,6 +715,7 @@ namespace CascadeUITest
             //выбрать любую строчку в спсике доступныз исков
 
             driver.FindElement(By.XPath("//span[contains(text(),'Вид требования')]/following::tr[@class='  x-grid-row']")).Click();
+            
         }
 
         public void ClickRedactionButtonLawSuit()
@@ -696,14 +740,6 @@ namespace CascadeUITest
             driver.FindElement(By.XPath("//input[@name='RequirementKind']")).Click();
             Thread.Sleep(1000);
             driver.FindElement(By.XPath("//li[contains(text(),'Заявление требований кредитора (банкротство)')]")).Click();
-
-
-            //Actions actions = new Actions(driver);
-            //IWebElement elementLocator = driver.FindElement(By.XPath("//input[@name='RequirementKind']"));
-            //actions.DoubleClick(elementLocator).Perform();
-            //Thread.Sleep(3000);
-            //elementLocator.SendKeys("Заявление требование кредитора (банкротство)");
-            //Thread.Sleep(3000);
         }
 
         public bool CheckSelectClaim()
@@ -748,12 +784,15 @@ namespace CascadeUITest
         public void StatusContractClaim()
         {
             //найти договор со статусом "Требует направление претензии"
+            driver = manager.Driver;
 
             driver.FindElement(By.XPath("//span[contains(text(),'Требует направление претензии')]")).Click();
         }
 
         public void RedactionContract()
         {
+            driver = manager.Driver;
+
             Thread.Sleep(3000);
             driver.Navigate().Refresh();
             Thread.Sleep(5000);
@@ -773,6 +812,7 @@ namespace CascadeUITest
         public void ClickButtonList()
         {
             //клик по кнопке "К списку"
+            driver = manager.Driver;
 
             driver.FindElement(By.XPath("//span[contains(text(),'К списку')]")).Click();
             Thread.Sleep(3000);
@@ -788,6 +828,7 @@ namespace CascadeUITest
         public void DeleteLastContract()
         {
             //удаление последнего договора
+            driver = manager.Driver;
 
             Thread.Sleep(3000);
             driver.Navigate().Refresh();
@@ -815,6 +856,7 @@ namespace CascadeUITest
         public void CheckRecContract(/*string numberContract*/) // стринг и драйвер после отладки убрать
         {
             //внесение "номер договора" в поле фильтра "номер договора" 
+            driver = manager.Driver;
 
             Thread.Sleep(3000);
             driver.FindElement(By.XPath("(//input[@data-ref='inputEl'])[3]")).SendKeys(numberContract);
@@ -1088,6 +1130,7 @@ namespace CascadeUITest
         {
             //кнопка "Обновить" в шапке хэдера
 
+            driver = manager.Driver;
             Thread.Sleep(3000);
             driver.FindElement(By.XPath("(//div[@role='toolbar']//span[contains(text(),'Обновить')])[1]")).Click();
         }
@@ -1119,6 +1162,7 @@ namespace CascadeUITest
         public void AddMoreContract()
         {
             //добавление доп.соглашения (функ.кнопка)
+            driver = manager.Driver;
 
             Thread.Sleep(3000);
             driver.Navigate().Refresh();
@@ -1132,6 +1176,7 @@ namespace CascadeUITest
         public void RedactionFuncButton()
         {
             //Редактирвоание (функц.кнопка)
+            driver = manager.Driver;
 
             Thread.Sleep(3000);
             driver.Navigate().Refresh();
@@ -1139,12 +1184,14 @@ namespace CascadeUITest
             driver.FindElement(By.XPath("//tr[@class='  x-grid-row']")).Click();
             Thread.Sleep(3000);
             driver.FindElement(By.XPath("(//div[contains(@class,'x-grid-cell-inner x-grid-cell-inner-action-col')])[1]")).Click();
+            Thread.Sleep(1000);
             driver.FindElement(By.XPath("//a[@data-ref='itemEl']//span[contains(text(),'Редактировать')]")).Click();
+            Thread.Sleep(3000);
         }
 
         public void DeleteFuncButton()
         {
-
+            driver = manager.Driver;
 
             Thread.Sleep(3000);
             driver.Navigate().Refresh();
@@ -1159,16 +1206,20 @@ namespace CascadeUITest
 
         public void ChangeStatusContract()
         {
+            driver = manager.Driver;
+
             Thread.Sleep(3000);
             driver.FindElement(By.XPath("//span[contains(text(),'Статус договора:')]/following::input[1]")).Click();
             Thread.Sleep(1000);
             driver.FindElement(By.XPath("//li[contains(text(),'На проверке')]")).Click();
+            Thread.Sleep(1000);
             ClickSave();
+            Thread.Sleep(4000);
         }
 
         public void ForCloneContract_ObjectRent(string numberObject)
         {
-
+            driver = manager.Driver;
 
             Thread.Sleep(3000);
             ChoiceObjectRent(numberObject);

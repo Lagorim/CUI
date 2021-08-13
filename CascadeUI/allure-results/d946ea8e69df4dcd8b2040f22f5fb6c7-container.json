@@ -1,0 +1,76 @@
+{
+  "uuid": "1eda5214-4969-48ac-99d3-b9b98c9c65da-tc-0-1066",
+  "name": "CascadeUITest.CheckStaff.#04 Создание пациента и полседующая авторизация под ним",
+  "children": [
+    "482d1741-de76-44db-9ab8-71317189ea3e-tr-0-1073"
+  ],
+  "befores": [
+    {
+      "name": "SetupManagerApp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627386107235,
+      "stop": 1627386107235
+    },
+    {
+      "name": "SetupLogin",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627386107235,
+      "stop": 1627386107235
+    }
+  ],
+  "afters": [
+    {
+      "name": "Dispose",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627386107235,
+      "stop": 1627386107235
+    },
+    {
+      "name": "OneTimeTearDown",
+      "status": "none",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "It's not possible to get status of OneTimeTearDown",
+        "trace": "See Allure.NUnit wiki"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627386107235,
+      "stop": 1627386107235
+    }
+  ],
+  "links": [],
+  "start": 1627385984627,
+  "stop": 1627386107261
+}

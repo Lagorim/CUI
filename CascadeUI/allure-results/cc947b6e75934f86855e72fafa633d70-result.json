@@ -1,0 +1,75 @@
+{
+  "uuid": "eb67a4e7-3c59-4907-8ab3-980c990b4afd-tr-0-1067",
+  "historyId": "CascadeUITest.CheckStaff.#01 Создание сотрудника",
+  "fullName": "CascadeUITest.CheckStaff.#01 Создание сотрудника",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-F7IBGNA"
+    },
+    {
+      "name": "testClass",
+      "value": "CascadeUITest.CheckStaff"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckCreateStaff"
+    },
+    {
+      "name": "package",
+      "value": "CascadeUITest.CheckStaff"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Сотрудники"
+    },
+    {
+      "name": "suite",
+      "value": "Сотрудники"
+    },
+    {
+      "name": "feature",
+      "value": "Сотрудники"
+    }
+  ],
+  "links": [],
+  "name": "#01 Создание сотрудника",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "#01 Создание сотрудника",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "8047586efb9647218d16efd81477f039-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1627367767337,
+      "stop": 1627367803605
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1627367767336,
+  "stop": 1627367803609
+}

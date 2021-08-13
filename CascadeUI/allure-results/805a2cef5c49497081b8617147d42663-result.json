@@ -1,0 +1,75 @@
+{
+  "uuid": "16e8619c-f881-4419-815d-212cc8094e42-tr-0-1035",
+  "historyId": "CascadeUITest.CheckCreateContract.#18 Удаление иска",
+  "fullName": "CascadeUITest.CheckCreateContract.#18 Удаление иска",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-F7IBGNA"
+    },
+    {
+      "name": "testClass",
+      "value": "CascadeUITest.CheckCreateContract"
+    },
+    {
+      "name": "testMethod",
+      "value": "DeleteLawSuit"
+    },
+    {
+      "name": "package",
+      "value": "CascadeUITest.CheckCreateContract"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Договор"
+    },
+    {
+      "name": "suite",
+      "value": "Договор"
+    },
+    {
+      "name": "feature",
+      "value": "Договор"
+    }
+  ],
+  "links": [],
+  "name": "#18 Удаление иска",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "#18 Удаление иска",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "a321be1a11ab4f38a0c0f01721dadcc4-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1627033825679,
+      "stop": 1627033861312
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1627033825679,
+  "stop": 1627033861312
+}

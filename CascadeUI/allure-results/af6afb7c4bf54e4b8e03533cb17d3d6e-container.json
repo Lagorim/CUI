@@ -1,0 +1,45 @@
+{
+  "uuid": "4ad93c7e-4e5f-41d3-92c2-aa99858c7c1b-tc-0-1041",
+  "name": "CascadeUITest.CheckCreateContragent.#03 Проверка создания контрагента - не заполнена дата",
+  "children": [
+    "60bf6ff8-7589-4914-aed3-8a43b7fd62a9-tr-0-1046"
+  ],
+  "befores": [
+    {
+      "name": "SetupManagerApp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627043848060,
+      "stop": 1627043848060
+    },
+    {
+      "name": "SetupLogin",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <span id=\"button-1019-btnInnerEl\" data-ref=\"btnInnerEl\" unselectable=\"on\" class=\"x-btn-inner x-btn-inner-default-small\">...</span> is not clickable at point (197, 943). Other element would receive the click: <div role=\"presentation\" class=\"x-mask x-border-box\" style=\"height: 964px; width: 1920px; z-index: 18996; left: 0px; top: 0px;\" id=\"ext-element-343\"></div>\n  (Session info: chrome=90.0.4430.72)",
+        "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.Execute(String commandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.Click()\r\n   at CascadeUITest.LoginHelper.Logout() in C:\\Users\\GIT\\Cascade\\CascadeUI\\AppManager\\LoginHelper.cs:line 69\r\n   at CascadeUITest.LoginHelper.LoginPage(String username, String password) in C:\\Users\\GIT\\Cascade\\CascadeUI\\AppManager\\LoginHelper.cs:line 33\r\n   at CascadeUITest.AuthBaseTest.SetupLogin() in C:\\Users\\GIT\\Cascade\\CascadeUI\\Tests\\AuthBaseTest.cs:line 21"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627043848060,
+      "stop": 1627043848060
+    }
+  ],
+  "afters": [],
+  "links": [],
+  "start": 1627043838289,
+  "stop": 1627043848062
+}

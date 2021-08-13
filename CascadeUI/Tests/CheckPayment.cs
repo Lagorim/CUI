@@ -2,10 +2,16 @@
 using System.Collections.Generic;
 using System.Text;
 using NUnit.Framework;
+using NUnit.Allure.Core;
+using NUnit.Allure.Attributes;
 
 namespace CascadeUITest
 {
     [TestFixture]
+    [AllureNUnit]
+    [AllureParentSuite("Оборотно-сальдовая ведомость")]
+    [AllureSuite("Оборотно-сальдовая ведомость")]
+    [AllureFeature("Оборотно-сальдовая ведомость")]
     public class CheckPayment : AuthBaseTest
     {
         [TestCase(TestName = "#01 Проверка открытия оборотно-сальдовой ведомости")]
@@ -42,7 +48,7 @@ namespace CascadeUITest
         public void CheckSummPay()
         {
             //app.Contract.CreateContractTrueStatus(new ContractData("01.06.2020", "01.06.2020", "16:05:011601:1006", "01.06.2022", "Кадастровая стоимость", "1", "01.06.2020"));
-            
+
             //app.Contract.CheckRecContract();
             app.Payment.ClickStatusContratcClaim();
 
@@ -52,7 +58,7 @@ namespace CascadeUITest
             app.Payment.ClickIncomigCharges();
 
             Assert.IsTrue(app.Payment.CheckSummNullIncoming() && app.Payment.CheckSummAccrued() && app.Payment.CheckSummOutgoing());
-            Assert.IsTrue(app.Payment.CheckSummIncoming_2String()&& app.Payment.CheckSummAccrues_2String() && app.Payment.CheckSummOutgoing_2String());
+            Assert.IsTrue(app.Payment.CheckSummIncoming_2String() && app.Payment.CheckSummAccrues_2String() && app.Payment.CheckSummOutgoing_2String());
         }
 
         [TestCase(TestName = "#04 Проверка отображения пени в оборотно-садльдовой ведомости")]

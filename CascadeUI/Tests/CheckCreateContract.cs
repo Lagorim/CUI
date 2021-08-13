@@ -1,4 +1,4 @@
-using System;
+ï»¿using System;
 using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -8,7 +8,6 @@ using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using System.Reflection;
-using Allure.Commons;
 using NUnit.Allure.Core;
 using NUnit.Allure.Attributes;
 
@@ -16,85 +15,67 @@ namespace CascadeUITest
 {
     [TestFixture]
     [AllureNUnit]
-    [AllureParentSuite("Äîãîâîð")]
-    [AllureSuite("Äîãîâîð")]
-    [AllureFeature("Äîãîâîð")]
+    [AllureParentSuite("Ð”Ð¾Ð³Ð¾Ð²Ð¾Ñ€")]
+    [AllureSuite("Ð”Ð¾Ð³Ð¾Ð²Ð¾Ñ€")]
+    [AllureFeature("Ð”Ð¾Ð³Ð¾Ð²Ð¾Ñ€")]
     public class CheckCreateContract : AuthBaseTest
     {
+        
+        //[OneTimeTearDown]
+        //public void OneTimeTearDown()
+        //{
+        //    Driver.Dispose();
+        //}
 
-        [TestCase(TestName = "#01 Ïðîâåðêà ñîçäàíèÿ äîãîâîðà - ñ èñòåêøåé äàòîé")]
+        [TestCase(TestName = "#01 Ð¡Ð¾Ð·Ð´Ð°Ð½Ð¸Ðµ Ð´Ð¾Ð³Ð¾Ð²Ð¾Ñ€Ð° - Ñ Ð¸ÑÑ‚ÐµÐºÑˆÐµÐ¹ Ð´Ð°Ñ‚Ð¾Ð¹")]
         [Order(1)]
         public void AddContract()
         {
-
-            app.Contract.CreateContract(new ContractData("16:05:011601:1006", "Êàäàñòðîâàÿ ñòîèìîñòü"));
-            //app.Contract
-            //.ClickOnContracts()
-            //.ButtonAdd()
-            //.NumberContract(new ContractData("1000-dd"))
-            //.ChoiceDateEnd_Today()
-            //.ChoiceObjectRent(new ContractData("16:05:011601:1006"));
+            
+            app.Contract.CreateContract(new ContractData("16:05:011601:1006", "ÐšÐ°Ð´Ð°ÑÑ‚Ñ€Ð¾Ð²Ð°Ñ ÑÑ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ"));
 
             Assert.IsTrue(app.Contract.CheckStatusContract_Expired());
-            //app.Contract.DeleteLastContract();
-            // íàäî ïðèìåíèòü â äðóãèõ òåñòàõ, ïðîâåðêà èçáûòî÷íà
-
-            //app.Contract.CheckRecContract();
-
         }
 
-        [TestCase(TestName = "#02 Ðåäàêòèðîâàíèå äîãîâîðà")]
+        [TestCase(TestName = "#02 Ð ÐµÐ´Ð°ÐºÑ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ Ð´Ð¾Ð³Ð¾Ð²Ð¾Ñ€Ð°")]
         [Order(2)]
         public void RedactionContract()
         {
-            //app.Contract.CreateContract(new ContractData("16:05:011601:1006", "Êàäàñòðîâàÿ ñòîèìîñòü"));
-
             app.Contract.RedactionContract();
 
             Assert.IsTrue(app.Contract.ButtonList());
         }
 
-        [TestCase(TestName = "#03 Óäàëåíèå äîãîâîðà")]
+        [TestCase(TestName = "#03 Ð£Ð´Ð°Ð»ÐµÐ½Ð¸Ðµ Ð´Ð¾Ð³Ð¾Ð²Ð¾Ñ€Ð°")]
         [Order(3)]
         public void DeleteContract()
         {
-            //app.Contract.DeleteLastContract();
-            //app.Contract.CreateContract(new ContractData("16:05:011601:1006", "Àóêöèîí"));
-
             app.Contract.DeleteLastContract();
             app.Contract.CheckRecContract();
 
             Assert.IsFalse(app.Contract.FilterFieldCheck());
         }
 
-        [TestCase(TestName = "#04 Ïðîâåðêà ñîçäàíèÿ äîãîâîðà - ñ äåéñòâóþùåé äàòîé ")]
+        [TestCase(TestName = "#04 ÐŸÑ€Ð¾Ð²ÐµÑ€ÐºÐ° ÑÐ¾Ð·Ð´Ð°Ð½Ð¸Ñ Ð´Ð¾Ð³Ð¾Ð²Ð¾Ñ€Ð° - Ñ Ð´ÐµÐ¹ÑÑ‚Ð²ÑƒÑŽÑ‰ÐµÐ¹ Ð´Ð°Ñ‚Ð¾Ð¹")]
         [Order(4)]
         public void AddContractTrueDate()
         {
-            app.Contract.CreateContractTrueStatus(new ContractData("16:05:011601:1006", "Àóêöèîí"));
+            app.Contract.CreateContractTrueStatus(new ContractData("16:05:011601:1006", "ÐÑƒÐºÑ†Ð¸Ð¾Ð½"));
 
             Assert.IsTrue(app.Contract.CheckStatusContract_Correct());
-            //app.Contract.CheckRecContract();
-            //app.Contract.CheckStatusContract_Correct();
-
-            // íàäî ïðèìåíèòü â äðóãèõ òåñòàõ, ïðîâåðêà èçáûòî÷íà
-
-            //app.Contract.DeleteLastContract();
         }
 
-        [TestCase(TestName = "#05 Îáíîâëåíèå äîãîâîðîâ")]
+        [TestCase(TestName = "#05 ÐžÐ±Ð½Ð¾Ð²Ð»ÐµÐ½Ð¸Ðµ Ð´Ð¾Ð³Ð¾Ð²Ð¾Ñ€Ð¾Ð²")]
         [Order(5)]
         public void RefreshContract()
         {
-            //app.Contract.CreateContractTrueStatus(new ContractData("16:05:011601:1006", "Àóêöèîí"));
-
             app.Contract.RefreshButton();
-            app.Contract.CheckRecContract();
+            //app.Contract.CheckRecContract();
 
             Assert.IsTrue(app.Contract.FilterFieldCheck());
         }
 
-        [TestCase(TestName = "#06 Âûãðóçèòü äîãîâîðà")]
+        [TestCase(TestName = "#06 Ð’Ñ‹Ð³Ñ€ÑƒÐ·Ð¸Ñ‚ÑŒ Ð´Ð¾Ð³Ð¾Ð²Ð¾Ñ€Ð°")]
         [Order(6)]
         public void UnloadContract()
         {
@@ -103,36 +84,32 @@ namespace CascadeUITest
             app.Contract.ClickUnloadButton();
         }
 
-        [TestCase(TestName = "#07 Ïðîâåðêà ðåäàêòèðîâàíèÿ (ôóíêöèîíàëüíûå êíîïêè)")]
+        [TestCase(TestName = "#07 ÐŸÑ€Ð¾Ð²ÐµÑ€ÐºÐ° Ñ€ÐµÐ´Ð°ÐºÑ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ñ (Ñ„ÑƒÐ½ÐºÑ†Ð¸Ð¾Ð½Ð°Ð»ÑŒÐ½Ñ‹Ðµ ÐºÐ½Ð¾Ð¿ÐºÐ¸)")]
         [Order(7)]
         public void RedactionContractFuncButton()
         {
-            //app.Contract.CreateContractTrueStatus(new ContractData("16:05:011601:1006", "Àóêöèîí"));
-
             app.Contract.RedactionFuncButton();
             app.Contract.ChangeStatusContract();
-            app.Contract.CheckRecContract();
+            //app.Contract.CheckRecContract();
 
             Assert.IsTrue(app.Contract.StatusTypeContractCheck());
         }
 
-        [TestCase(TestName = "#08 Ïðîâåðêà óäàëåíèÿ (ôóíêöèîíàëüíûå êíîïêè)")]
+        [TestCase(TestName = "#08 ÐŸÑ€Ð¾Ð²ÐµÑ€ÐºÐ° ÑƒÐ´Ð°Ð»ÐµÐ½Ð¸Ñ (Ñ„ÑƒÐ½ÐºÑ†Ð¸Ð¾Ð½Ð°Ð»ÑŒÐ½Ñ‹Ðµ ÐºÐ½Ð¾Ð¿ÐºÐ¸)")]
         [Order(8)]
         public void DeleteContractFuncButton()
         {
-            //app.Contract.CreateContractTrueStatus(new ContractData("16:05:011601:1006", "Àóêöèîí"));
-
             app.Contract.DeleteFuncButton();
             app.Contract.CheckRecContract();
 
             Assert.IsFalse(app.Contract.FilterFieldCheck());
         }
 
-        [TestCase(TestName = "#09 Êëîíèðîâàíèå äîãîâîðà (ôóíêöèîëüíûå êíîïêè)")]
+        [TestCase(TestName = "#09 ÐšÐ»Ð¾Ð½Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ Ð´Ð¾Ð³Ð¾Ð²Ð¾Ñ€Ð° (Ñ„ÑƒÐ½ÐºÑ†Ð¸Ð¾Ð»ÑŒÐ½Ñ‹Ðµ ÐºÐ½Ð¾Ð¿ÐºÐ¸)")]
         [Order(9)]
         public void CloneContract()
         {
-            app.Contract.CreateContractTrueStatus(new ContractData("16:05:011601:1006", "Êàäàñòðîâàÿ ñòîèìîñòü"));
+            app.Contract.CreateContractTrueStatus(new ContractData("16:05:011601:1006", "ÐšÐ°Ð´Ð°ÑÑ‚Ñ€Ð¾Ð²Ð°Ñ ÑÑ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ"));
 
             app.Contract.CloneContract();
             app.Contract.ForCloneContract_ObjectRent("16:05:011601:1006");
@@ -141,33 +118,31 @@ namespace CascadeUITest
             Assert.IsTrue(app.Contract.FilterFieldCheck() && app.Contract.FilterSecondStringCheck());
         }
 
-        [TestCase(TestName = "#10 Äîáàâëåíèå äîïîëíèòåëüíîãî ñîãëàøåíèÿ (ôóíêöèîíàëüíûå êíîïêè)")]
+        [TestCase(TestName = "#10 Ð”Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ Ð´Ð¾Ð¿Ð¾Ð»Ð½Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾Ð³Ð¾ ÑÐ¾Ð³Ð»Ð°ÑˆÐµÐ½Ð¸Ñ (Ñ„ÑƒÐ½ÐºÑ†Ð¸Ð¾Ð½Ð°Ð»ÑŒÐ½Ñ‹Ðµ ÐºÐ½Ð¾Ð¿ÐºÐ¸)")]
         [Order(10)]
         public void AddMoreContract()
         {
-            //app.Contract.CreateContractTrueStatus(new ContractData("16:05:011601:1006", "Êàäàñòðîâàÿ ñòîèìîñòü"));
-
             app.Contract.AddMoreContract();
             app.Contract.ForCloneContract_ObjectRent("16:05:011601:1006");
-            app.Contract.CheckRecContract();
+            //app.Contract.CheckRecContract();
 
             Assert.IsTrue(app.Contract.CheckStatusTypeContract());
         }
 
-        [TestCase(TestName = "#11 Ïåðåõîä âî âêëàäêó Ïðåòåíçèè - ó äîãîâîðà ñî ñòàòóñîì Íåò çàäîëæåííîñòè")]
+        [TestCase(TestName = "#11 ÐŸÐµÑ€ÐµÑ…Ð¾Ð´ Ð²Ð¾ Ð²ÐºÐ»Ð°Ð´ÐºÑƒ ÐŸÑ€ÐµÑ‚ÐµÐ½Ð·Ð¸Ð¸ - Ñƒ Ð´Ð¾Ð³Ð¾Ð²Ð¾Ñ€Ð° ÑÐ¾ ÑÑ‚Ð°Ñ‚ÑƒÑÐ¾Ð¼ ÐÐµÑ‚ Ð·Ð°Ð´Ð¾Ð»Ð¶ÐµÐ½Ð½Ð¾ÑÑ‚Ð¸")]
         [Order(11)]
         public void StatusPaidContract()
         {
             app.Contract.StatusPaidContract();
+
             Assert.IsTrue(app.Contract.ButtonList());
         }
 
-        [TestCase(TestName = "#12 Ôîðìèðîâàíèå ôàéëà ïðåòåíçèè, ïðîâåðêà ôîðìèðîâàíèÿ ôàéëà")]
+        [TestCase(TestName = "#12 Ð¤Ð¾Ñ€Ð¼Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ Ñ„Ð°Ð¹Ð»Ð° Ð¿Ñ€ÐµÑ‚ÐµÐ½Ð·Ð¸Ð¸, Ð¿Ñ€Ð¾Ð²ÐµÑ€ÐºÐ° Ñ„Ð¾Ñ€Ð¼Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ñ Ñ„Ð°Ð¹Ð»Ð°")]
         [Order(12)]
         public void CheckAddClaimFile()
         {
             app.Contract.AddClaimPaidContract("17.06.2021", "16.09.2020", "21.09.2021");
-            //Assert.IsTrue(app.Contract.CheckFile());
             app.Contract.ClickCreateFile();
             app.Contract.CheckDownloadFileClaim();
 
@@ -176,7 +151,7 @@ namespace CascadeUITest
             app.Contract.ClickCancelButtonClaim();
         }
 
-        [TestCase(TestName = "#13 Ñîõðàíåíèå ïðåòåíçèè - ñ ôàéëîì è óäàëåíèå")]
+        [TestCase(TestName = "#13 Ð¡Ð¾Ñ…Ñ€Ð°Ð½ÐµÐ½Ð¸Ðµ Ð¿Ñ€ÐµÑ‚ÐµÐ½Ð·Ð¸Ð¸ - Ñ Ñ„Ð°Ð¹Ð»Ð¾Ð¼ Ð¸ ÑƒÐ´Ð°Ð»ÐµÐ½Ð¸Ðµ")]
         [Order(13)]
         public void CheckAddClaimSaveAndDelete()
         {
@@ -186,20 +161,16 @@ namespace CascadeUITest
             app.Contract.ClickSaveButtonClaim();
 
             app.Contract.DeleteClaim();
-            //Assert.IsFalse(app.Contract.CheckSummNull());
+
             while (app.Contract.CheckSummNull() == true)
             {
                 app.Contract.DeleteClaim();
             }
-            //else
-            //{
-            //    app.Contract.CheckSummNull();
-            //}
 
             Assert.IsFalse(app.Contract.CheckSummNull());
         }
 
-        [TestCase(TestName = "#14 Ñîõðàíåíèå ïðåòåíçèè - ñ ôàéëîì ")]
+        [TestCase(TestName = "#14 Ð¡Ð¾Ñ…Ñ€Ð°Ð½ÐµÐ½Ð¸Ðµ Ð¿Ñ€ÐµÑ‚ÐµÐ½Ð·Ð¸Ð¸ - Ñ Ñ„Ð°Ð¹Ð»Ð¾Ð¼")]
         [Order(14)]
         public void CheckAddClaimSave()
         {
@@ -207,8 +178,6 @@ namespace CascadeUITest
             app.Contract.ClickCreateFile();
             app.Contract.CheckDownloadFileClaim();
             app.Contract.ClickSaveButtonClaim();
-
-
 
             Assert.IsTrue(app.Contract.CheckSummNull());
 
@@ -219,7 +188,7 @@ namespace CascadeUITest
             }
         }
 
-        [TestCase(TestName = "#15 Ðåäàêòèðîâàíèå ïðåòåíçèè")]
+        [TestCase(TestName = "#15 Ð ÐµÐ´Ð°ÐºÑ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ Ð¿Ñ€ÐµÑ‚ÐµÐ½Ð·Ð¸Ð¸")]
         [Order(15)]
         public void RedactionClaim()
         {
@@ -227,25 +196,25 @@ namespace CascadeUITest
             app.Contract.ClickSaveButtonClaim();
             app.Contract.RedactionClaim();
 
-            app.Contract.ChangeClaim("Çàäîëæåííîñòü è íåóñòîéêà");
+            app.Contract.ChangeClaim("Ð—Ð°Ð´Ð¾Ð»Ð¶ÐµÐ½Ð½Ð¾ÑÑ‚ÑŒ Ð¸ Ð½ÐµÑƒÑÑ‚Ð¾Ð¹ÐºÐ°");
             app.Contract.ClickSaveButtonClaim();
 
             app.Contract.RedactionClaim();
-            Assert.IsTrue(app.Contract.ChangeNameClaim("Çàäîëæåííîñòü è íåóñòîéêà"));
+            Assert.IsTrue(app.Contract.ChangeNameClaim("Ð—Ð°Ð´Ð¾Ð»Ð¶ÐµÐ½Ð½Ð¾ÑÑ‚ÑŒ Ð¸ Ð½ÐµÑƒÑÑ‚Ð¾Ð¹ÐºÐ°"));
 
             app.Contract.ClickCancelButtonClaim();
         }
 
-        [TestCase(TestName = "#16 Äîáàâëåíèå èñêà")]
+        [TestCase(TestName = "#16 Ð”Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ Ð¸ÑÐºÐ°")]
         [Order(16)]
         public void AddLawSuit()
-        {
+       {
             app.Contract.AddLawSuit();
 
             Assert.IsTrue(app.Contract.CheckSummNull());
         }
 
-        [TestCase(TestName = "#17 Ðåäàêòèðîâàíèå èñêà")]
+        [TestCase(TestName = "#17 Ð ÐµÐ´Ð°ÐºÑ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ðµ Ð¸ÑÐºÐ°")]
         [Order(17)]
         public void ReadactionLawSuit()
         {
@@ -254,7 +223,7 @@ namespace CascadeUITest
             Assert.IsTrue(app.Contract.CheckViewRequest());
         }
 
-        [TestCase(TestName = "#18 Óäàëåíèå èñêà")]
+        [TestCase(TestName = "#18 Ð£Ð´Ð°Ð»ÐµÐ½Ð¸Ðµ Ð¸ÑÐºÐ°")]
         [Order(18)]
         public void DeleteLawSuit()
         {
@@ -263,7 +232,7 @@ namespace CascadeUITest
             Assert.IsFalse(app.Contract.CheckSummNull());
         }
 
-        [TestCase(TestName = "#19 Ïðîâåðêà êíîïîê íàâèãàöèîííîé ïàíåëè >")]
+        [TestCase(TestName = "#19 ÐŸÑ€Ð¾Ð²ÐµÑ€ÐºÐ° ÐºÐ½Ð¾Ð¿Ð¾Ðº Ð½Ð°Ð²Ð¸Ð³Ð°Ñ†Ð¸Ð¾Ð½Ð½Ð¾Ð¹ Ð¿Ð°Ð½ÐµÐ»Ð¸ >")]
         [Order(19)]
         public void NavigationButtonNextPage()
         {
@@ -272,13 +241,12 @@ namespace CascadeUITest
             Assert.IsTrue(app.Contract.CheckWorkNextPage());
         }
 
-        [TestCase(TestName = "#20 Ïðîâåðêà êíîïîê íàâèãàöèîííîé ïàíåëè >> è <<")]
+        [TestCase(TestName = "#20 ÐŸÑ€Ð¾Ð²ÐµÑ€ÐºÐ° ÐºÐ½Ð¾Ð¿Ð¾Ðº Ð½Ð°Ð²Ð¸Ð³Ð°Ñ†Ð¸Ð¾Ð½Ð½Ð¾Ð¹ Ð¿Ð°Ð½ÐµÐ»Ð¸ >> Ð¸ <<")]
         [Order(20)]
         public void NavigationButtonLastPage()
         {
             app.Contract.ClickButtonLastPage();
             app.Contract.ClickButtonFirstPage();
-
 
             Assert.IsTrue(app.Contract.CheckWorkFirstPage());
         }

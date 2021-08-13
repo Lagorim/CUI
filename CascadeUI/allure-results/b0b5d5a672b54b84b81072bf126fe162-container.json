@@ -1,0 +1,43 @@
+{
+  "uuid": "3f871b42-2b25-4643-8592-8b568a4d735c-tc-0-1041",
+  "name": "CascadeUITest.CheckCreateContragent.#01 Проверка создания контрагента",
+  "children": [
+    "0cd00557-f1e5-4449-9afc-1f6985446fdc-tr-0-1042"
+  ],
+  "befores": [
+    {
+      "name": "SetupManagerApp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627041880273,
+      "stop": 1627041880273
+    },
+    {
+      "name": "SetupLogin",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627041880273,
+      "stop": 1627041880273
+    }
+  ],
+  "afters": [],
+  "links": [],
+  "start": 1627041831642,
+  "stop": 1627041880298
+}

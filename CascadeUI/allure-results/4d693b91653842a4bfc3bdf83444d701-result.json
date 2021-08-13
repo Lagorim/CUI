@@ -1,0 +1,75 @@
+{
+  "uuid": "c37b69e9-368c-4185-851f-5615ebba0eb3-tr-0-1048",
+  "historyId": "CascadeUITest.CheckCreateContragent.#04 Отказ от заполнения формы контрагента",
+  "fullName": "CascadeUITest.CheckCreateContragent.#04 Отказ от заполнения формы контрагента",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-F7IBGNA"
+    },
+    {
+      "name": "testClass",
+      "value": "CascadeUITest.CheckCreateContragent"
+    },
+    {
+      "name": "testMethod",
+      "value": "CancelAddFormContragent"
+    },
+    {
+      "name": "package",
+      "value": "CascadeUITest.CheckCreateContragent"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Контрагент"
+    },
+    {
+      "name": "suite",
+      "value": "Контрагент"
+    },
+    {
+      "name": "feature",
+      "value": "Контрагент"
+    }
+  ],
+  "links": [],
+  "name": "#04 Отказ от заполнения формы контрагента",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "#04 Отказ от заполнения формы контрагента",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "d74b238ee1e74f45b1f45a1fd943d2f4-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1627045095791,
+      "stop": 1627045127489
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1627045095791,
+  "stop": 1627045127489
+}

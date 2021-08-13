@@ -1,0 +1,75 @@
+{
+  "uuid": "48012f43-a750-4fa7-b585-4c6ef87f2b6f-tr-0-1005",
+  "historyId": "CascadeUITest.CheckCreateContract.#03 Удаление договора",
+  "fullName": "CascadeUITest.CheckCreateContract.#03 Удаление договора",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-F7IBGNA"
+    },
+    {
+      "name": "testClass",
+      "value": "CascadeUITest.CheckCreateContract"
+    },
+    {
+      "name": "testMethod",
+      "value": "DeleteContract"
+    },
+    {
+      "name": "package",
+      "value": "CascadeUITest.CheckCreateContract"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Договор"
+    },
+    {
+      "name": "suite",
+      "value": "Договор"
+    },
+    {
+      "name": "feature",
+      "value": "Договор"
+    }
+  ],
+  "links": [],
+  "name": "#03 Удаление договора",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "#03 Удаление договора",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "554f21a6be9645e480286a5f092f9b32-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1626964589656,
+      "stop": 1626964642892
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1626964589656,
+  "stop": 1626964642893
+}

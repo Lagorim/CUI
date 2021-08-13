@@ -1,0 +1,75 @@
+{
+  "uuid": "f6aa974c-aa30-4ca1-9df3-0f09546c7be1-tr-0-1055",
+  "historyId": "CascadeUITest.CheckCreateLogin.#02 Проверка не валидных данных при логине",
+  "fullName": "CascadeUITest.CheckCreateLogin.#02 Проверка не валидных данных при логине",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-F7IBGNA"
+    },
+    {
+      "name": "testClass",
+      "value": "CascadeUITest.CheckCreateLogin"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckLoginNotValid"
+    },
+    {
+      "name": "package",
+      "value": "CascadeUITest.CheckCreateLogin"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Логин"
+    },
+    {
+      "name": "suite",
+      "value": "Логин"
+    },
+    {
+      "name": "feature",
+      "value": "Логин"
+    }
+  ],
+  "links": [],
+  "name": "#02 Проверка не валидных данных при логине",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "#02 Проверка не валидных данных при логине",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "43a557dbdfd6445385382dcf0336724c-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1627040987684,
+      "stop": 1627041011219
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1627040987684,
+  "stop": 1627041011219
+}

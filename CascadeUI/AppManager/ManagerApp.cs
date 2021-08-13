@@ -22,6 +22,7 @@ namespace CascadeUITest
         protected ContractHelper contractHelper;
         protected ContrAgentHelper contrAgentHelper;
         protected PaymentHelper paymentHelper;
+        protected StaffHelper staffHelper;
 
         protected IWebDriver driver;
         //private StringBuilder verificationErrors;
@@ -51,6 +52,7 @@ namespace CascadeUITest
             contractHelper = new ContractHelper(this);
             contrAgentHelper = new ContrAgentHelper(this);
             paymentHelper = new PaymentHelper(this);
+            staffHelper = new StaffHelper(this);
 
             //новое
             NameSession = name;
@@ -64,17 +66,53 @@ namespace CascadeUITest
 
         }
 
+
         public static ManagerApp GetInstance()
         {
-            if (! app.IsValueCreated)
+            if (!app.IsValueCreated)
             {
-                ManagerApp newInstance = new ManagerApp();
-                newInstance.Navigation.OpenHomePage(newInstance);
-                app.Value = newInstance;
+                //ManagerApp newIn = new ManagerApp();
+                //newIn.Navigation.OpenHomePage(newIn);
+                //app.Value = newIn;
+                //return app.Value;
+
+
+                if (app.IsValueCreated)
+                {
+                    ManagerApp newInstance = new ManagerApp();
+                    newInstance.Navigation.OpenHomePage(newInstance);
+                    app.Value = newInstance;
+                    return app.Value;
+                }
+
+                //return app.Value;
+                //ManagerApp newInstance_t = new ManagerApp();
+                //newInstance_t.Navigation.OpenHomePage(newInstance_t);
+                //app.Value = newInstance_t;
             }
+
+            //ManagerApp newIn = new ManagerApp();
+            //newIn.Navigation.OpenHomePage(newIn);
+
+            ManagerApp newInstance_1 = new ManagerApp();
+            newInstance_1.Navigation.OpenHomePage(newInstance_1);
+            app.Value = newInstance_1;
             return app.Value;
 
         }
+
+        //public static ManagerApp GetInstance()
+        //{
+        //    if (!app.IsValueCreated)
+        //    {
+        //        ManagerApp newInstance_1 = new ManagerApp();
+        //        newInstance_1.Navigation.OpenHomePage(newInstance_1);
+        //        app.Value = newInstance_1;
+        //    }
+
+        //    return app.Value;
+        //}
+
 
         public void Dispose()
         {
@@ -89,9 +127,9 @@ namespace CascadeUITest
         //    {
         //        Driver.Quit();
         //    }
-        //    catch (Exception)
+        //    catch (Exception )
         //    {
-        //        // Ignore errors if unable to close the browser
+
         //    }
         //}
 
@@ -259,6 +297,14 @@ namespace CascadeUITest
             }
         }
 
+        public StaffHelper Staff
+        {
+            get
+            {
+                return staffHelper;
+            }
+        }
+
 
         //новое
 
@@ -273,10 +319,51 @@ namespace CascadeUITest
             return reader.GetValue("AppURL");
         }
 
-        
 
-        
+
+
         //#endregion
 
+        #region Работа со скриншотами
+
+        /// <summary>
+        /// Прикрепить скриншот к отчету
+        /// </summary>
+        public void AttachScreenToReport(string name = "")
+        {
+            try
+            {
+                var ss = TakeScreenshot();
+                byte[] img = ss.AsByteArray;
+                AllureLifecycle.Instance.AddAttachment($"{name}ScreenShot-{DateTime.Now.ToString("HH-mm-ss")}" + $"-{new Random().Next(100, 999).ToString()}", "image/png", img, "png");
+            }
+            catch { }
+        }
+
+        /// <summary>
+        /// Сделать скриншот
+        /// </summary>
+        /// <returns></returns>
+        public Screenshot TakeScreenshot()
+        {
+            try
+            {
+                WebDriver.SwitchTo().Alert();
+                return null;
+            }
+            catch
+            {
+                try
+                {
+                    return ((ITakesScreenshot)WebDriver).GetScreenshot();
+                }
+                catch (Exception e)
+                {
+                    throw new Exception($"Не удалось сделать скриншот; {e.Message}");
+                }
+            }
+        }
+
+        #endregion
     }
 }

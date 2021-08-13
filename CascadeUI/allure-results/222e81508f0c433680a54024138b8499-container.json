@@ -1,0 +1,43 @@
+{
+  "uuid": "afeae573-b8fa-44ec-af1f-df73545279c5-tc-0-1000",
+  "name": "CascadeUITest.CheckCreateContract.#13 Сохранение претензии - с файлом и удаление",
+  "children": [
+    "e7ddb437-cb48-4df4-b5ee-a3c98db7ea2e-tr-0-1025"
+  ],
+  "befores": [
+    {
+      "name": "SetupManagerApp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627033430257,
+      "stop": 1627033430257
+    },
+    {
+      "name": "SetupLogin",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627033430257,
+      "stop": 1627033430257
+    }
+  ],
+  "afters": [],
+  "links": [],
+  "start": 1627033320295,
+  "stop": 1627033430258
+}

@@ -1,0 +1,79 @@
+{
+  "uuid": "4f1ff82c-de27-438e-8218-081c7e8dd82e-tr-0-1071",
+  "historyId": "CascadeUITest.CheckStaff.#03 Удаление сотрудника",
+  "fullName": "CascadeUITest.CheckStaff.#03 Удаление сотрудника",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-F7IBGNA"
+    },
+    {
+      "name": "testClass",
+      "value": "CascadeUITest.CheckStaff"
+    },
+    {
+      "name": "testMethod",
+      "value": "DeleteStaff"
+    },
+    {
+      "name": "package",
+      "value": "CascadeUITest.CheckStaff"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Сотрудники"
+    },
+    {
+      "name": "suite",
+      "value": "Сотрудники"
+    },
+    {
+      "name": "feature",
+      "value": "Сотрудники"
+    }
+  ],
+  "links": [],
+  "name": "#03 Удаление сотрудника",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.ElementNotInteractableException : element not interactable\n  (Session info: chrome=90.0.4430.72)",
+    "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.Click()\r\n   at CascadeUITest.StaffHelper.SelectStaffAllList() in C:\\Users\\GIT\\Cascade\\CascadeUI\\AppManager\\StaffHelper.cs:line 165\r\n   at CascadeUITest.StaffHelper.DeleteStaff() in C:\\Users\\GIT\\Cascade\\CascadeUI\\AppManager\\StaffHelper.cs:line 64\r\n   at CascadeUITest.CheckStaff.DeleteStaff() in C:\\Users\\GIT\\Cascade\\CascadeUI\\Tests\\CheckStaff.cs:line 44"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "#03 Удаление сотрудника",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.ElementNotInteractableException : element not interactable\n  (Session info: chrome=90.0.4430.72)",
+        "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.Click()\r\n   at CascadeUITest.StaffHelper.SelectStaffAllList() in C:\\Users\\GIT\\Cascade\\CascadeUI\\AppManager\\StaffHelper.cs:line 165\r\n   at CascadeUITest.StaffHelper.DeleteStaff() in C:\\Users\\GIT\\Cascade\\CascadeUI\\AppManager\\StaffHelper.cs:line 64\r\n   at CascadeUITest.CheckStaff.DeleteStaff() in C:\\Users\\GIT\\Cascade\\CascadeUI\\Tests\\CheckStaff.cs:line 44"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "b8e2b0080d4749ef9426cbb3e1f1ff20-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1627367821879,
+      "stop": 1627367857764
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1627367821879,
+  "stop": 1627367857764
+}

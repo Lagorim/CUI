@@ -1,0 +1,59 @@
+{
+  "uuid": "7878d5dd-9009-4f01-918b-520a3a9e781b-tc-0-1057",
+  "name": "CascadeUITest.CheckPayment.#04 Проверка отображения пени в оборотно-садльдовой ведомости",
+  "children": [
+    "2e5ab4ef-862e-4d23-bb3c-488df6d8bc3a-tr-0-1064"
+  ],
+  "befores": [
+    {
+      "name": "SetupManagerApp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627401033225,
+      "stop": 1627401033225
+    },
+    {
+      "name": "SetupLogin",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627401033225,
+      "stop": 1627401033225
+    }
+  ],
+  "afters": [
+    {
+      "name": "Dispose",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627401033225,
+      "stop": 1627401033225
+    }
+  ],
+  "links": [],
+  "start": 1627401003184,
+  "stop": 1627401033226
+}

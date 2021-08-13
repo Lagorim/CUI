@@ -86,6 +86,7 @@ namespace CascadeUITest
         public void ClickIncomigCharges()
         {
             //клик по "Входящее" в графе "Начисления". Изменение положения на "убывание"
+            driver = manager.Driver;
 
             while (!CheckSummNullIncoming())
             {
@@ -100,6 +101,8 @@ namespace CascadeUITest
         public void ClickRecalculate()
         {
             //клик по кнопке "Пересчитать"
+
+            driver = manager.Driver;
 
             driver.FindElement(By.XPath("//span[contains(text(),'Пересчитать')]")).Click();
             Thread.Sleep(3000);

@@ -1,0 +1,75 @@
+{
+  "uuid": "90e31485-2596-46fa-984f-7711f7c85b55-tr-0-1058",
+  "historyId": "CascadeUITest.CheckPayment.#01 Проверка открытия оборотно-сальдовой ведомости",
+  "fullName": "CascadeUITest.CheckPayment.#01 Проверка открытия оборотно-сальдовой ведомости",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-F7IBGNA"
+    },
+    {
+      "name": "testClass",
+      "value": "CascadeUITest.CheckPayment"
+    },
+    {
+      "name": "testMethod",
+      "value": "CheckOpenPayment"
+    },
+    {
+      "name": "package",
+      "value": "CascadeUITest.CheckPayment"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Оборотно-сальдовая ведомость"
+    },
+    {
+      "name": "suite",
+      "value": "Оборотно-сальдовая ведомость"
+    },
+    {
+      "name": "feature",
+      "value": "Оборотно-сальдовая ведомость"
+    }
+  ],
+  "links": [],
+  "name": "#01 Проверка открытия оборотно-сальдовой ведомости",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "#01 Проверка открытия оборотно-сальдовой ведомости",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "74ff4480abb5413084ac7d97a92e1fed-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1627400830504,
+      "stop": 1627400919706
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1627400830504,
+  "stop": 1627400919706
+}

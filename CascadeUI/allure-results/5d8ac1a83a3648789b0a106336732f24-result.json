@@ -1,0 +1,79 @@
+{
+  "uuid": "2b597ca4-fdd2-463b-bd36-71b1b85d3dde-tr-0-1073",
+  "historyId": "CascadeUITest.CheckStaff.#04 Создание пациента и полседующая авторизация под ним",
+  "fullName": "CascadeUITest.CheckStaff.#04 Создание пациента и полседующая авторизация под ним",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "15"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-F7IBGNA"
+    },
+    {
+      "name": "testClass",
+      "value": "CascadeUITest.CheckStaff"
+    },
+    {
+      "name": "testMethod",
+      "value": "CreateStaffAndAutorization"
+    },
+    {
+      "name": "package",
+      "value": "CascadeUITest.CheckStaff"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Сотрудники"
+    },
+    {
+      "name": "suite",
+      "value": "Сотрудники"
+    },
+    {
+      "name": "feature",
+      "value": "Сотрудники"
+    }
+  ],
+  "links": [],
+  "name": "#04 Создание пациента и полседующая авторизация под ним",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Threading.ThreadAbortException : System error.",
+    "trace": ""
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "#04 Создание пациента и полседующая авторизация под ним",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "System.Threading.ThreadAbortException : System error.",
+        "trace": ""
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "c5742d2693df49239e67dfcda2f2cfe8-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1627389703618,
+      "stop": 1627389838795
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1627389703617,
+  "stop": 1627389838800
+}

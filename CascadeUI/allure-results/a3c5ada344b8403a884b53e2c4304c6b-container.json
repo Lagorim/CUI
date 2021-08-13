@@ -1,0 +1,93 @@
+{
+  "uuid": "6a347c82-a6ea-4a13-bc4c-8cd5ad1e4980-tc-0-1066",
+  "name": "CascadeUITest.CheckStaff.#04 Создание пациента и последующая авторизация под ним",
+  "children": [
+    "a8d57ed3-83ff-4373-b9ea-82af78ce2557-tr-0-1073"
+  ],
+  "befores": [
+    {
+      "name": "SetupManagerApp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627394726814,
+      "stop": 1627394726814
+    },
+    {
+      "name": "SetupLogin",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627394726814,
+      "stop": 1627394726814
+    }
+  ],
+  "afters": [
+    {
+      "name": "Dispose",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627394726815,
+      "stop": 1627394726815
+    },
+    {
+      "name": "TearDown",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "TearDown : OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"(//div[@class='x-grid-item-container'])[2]//table\"}\n  (Session info: chrome=90.0.4430.72)",
+        "trace": "--TearDown\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)\r\n   at CascadeUITest.StaffHelper.SelectStaffAllList() in C:\\Users\\GIT\\Cascade\\CascadeUI\\AppManager\\StaffHelper.cs:line 231\r\n   at CascadeUITest.CheckStaff.TearDown() in C:\\Users\\GIT\\Cascade\\CascadeUI\\Tests\\CheckStaff.cs:line 38"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627394726815,
+      "stop": 1627394726815
+    },
+    {
+      "name": "OneTimeTearDown",
+      "status": "none",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "It's not possible to get status of OneTimeTearDown",
+        "trace": "See Allure.NUnit wiki"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627394726815,
+      "stop": 1627394726815
+    }
+  ],
+  "links": [],
+  "start": 1627394620456,
+  "stop": 1627394726836
+}

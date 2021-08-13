@@ -1,0 +1,79 @@
+{
+  "uuid": "aad22fcc-ded3-4309-8965-1e23dcf3aab9-tr-0-1042",
+  "historyId": "CascadeUITest.CheckCreateContragent.#01 Проверка создания контрагента",
+  "fullName": "CascadeUITest.CheckCreateContragent.#01 Проверка создания контрагента",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "15"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-F7IBGNA"
+    },
+    {
+      "name": "testClass",
+      "value": "CascadeUITest.CheckCreateContragent"
+    },
+    {
+      "name": "testMethod",
+      "value": "AddContragent"
+    },
+    {
+      "name": "package",
+      "value": "CascadeUITest.CheckCreateContragent"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Контрагент"
+    },
+    {
+      "name": "suite",
+      "value": "Контрагент"
+    },
+    {
+      "name": "feature",
+      "value": "Контрагент"
+    }
+  ],
+  "links": [],
+  "name": "#01 Проверка создания контрагента",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "  Expected: True\r\n  But was:  False\r\n",
+    "trace": "   at CascadeUITest.CheckCreateContragent.AddContragent() in C:\\Users\\GIT\\Cascade\\CascadeUI\\Tests\\CheckCreateContragent.cs:line 32\r\n"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "#01 Проверка создания контрагента",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "  Expected: True\r\n  But was:  False\r\n",
+        "trace": "   at CascadeUITest.CheckCreateContragent.AddContragent() in C:\\Users\\GIT\\Cascade\\CascadeUI\\Tests\\CheckCreateContragent.cs:line 32\r\n"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "658ea54a942c44c9a180c06b6c4bb61b-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1627043197598,
+      "stop": 1627043243611
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1627043197597,
+  "stop": 1627043243615
+}

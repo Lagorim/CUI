@@ -20,6 +20,13 @@ namespace CascadeUITest
             var passWord = reader.GetValue("Password");
             app.Auth.LoginPage(userName, passWord);
             Thread.Sleep(10000);
+         }
+
+        [TearDown]
+        public void Dispose()
+        {
+            app.Driver.Quit();
+            app.Driver.Dispose();
         }
     }
 }

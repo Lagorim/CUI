@@ -1,0 +1,79 @@
+{
+  "uuid": "ebfaedf4-b321-435f-b924-bc5a534305da-tr-0-1015",
+  "historyId": "CascadeUITest.CheckCreateContract.#08 Проверка удаления (функциональные кнопки)",
+  "fullName": "CascadeUITest.CheckCreateContract.#08 Проверка удаления (функциональные кнопки)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-F7IBGNA"
+    },
+    {
+      "name": "testClass",
+      "value": "CascadeUITest.CheckCreateContract"
+    },
+    {
+      "name": "testMethod",
+      "value": "DeleteContractFuncButton"
+    },
+    {
+      "name": "package",
+      "value": "CascadeUITest.CheckCreateContract"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Договор"
+    },
+    {
+      "name": "suite",
+      "value": "Договор"
+    },
+    {
+      "name": "feature",
+      "value": "Договор"
+    }
+  ],
+  "links": [],
+  "name": "#08 Проверка удаления (функциональные кнопки)",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.NullReferenceException : Object reference not set to an instance of an object.",
+    "trace": "   at CascadeUITest.ContractHelper.DeleteFuncButton() in C:\\Users\\GIT\\Cascade\\CascadeUI\\AppManager\\ContractHelper.cs:line 1159\r\n   at CascadeUITest.CheckCreateContract.DeleteContractFuncButton() in C:\\Users\\GIT\\Cascade\\CascadeUI\\Tests\\CheckCreateContract.cs:line 102"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "#08 Проверка удаления (функциональные кнопки)",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "System.NullReferenceException : Object reference not set to an instance of an object.",
+        "trace": "   at CascadeUITest.ContractHelper.DeleteFuncButton() in C:\\Users\\GIT\\Cascade\\CascadeUI\\AppManager\\ContractHelper.cs:line 1159\r\n   at CascadeUITest.CheckCreateContract.DeleteContractFuncButton() in C:\\Users\\GIT\\Cascade\\CascadeUI\\Tests\\CheckCreateContract.cs:line 102"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "a0df97ede5094bb5a0fd94ae26424a94-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1626964806013,
+      "stop": 1626964833140
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1626964806013,
+  "stop": 1626964833141
+}

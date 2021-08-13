@@ -1,0 +1,59 @@
+{
+  "uuid": "90147f8f-4899-440f-942f-78c7440b46a8-tc-0-1057",
+  "name": "CascadeUITest.CheckPayment.#03 Проверка отображения сумм в обортной-сальдовой ведомости(входящее = 0,00-начислено=сумма=исходящее)",
+  "children": [
+    "cb78f662-54bc-4d89-aac1-0abc1e1ad3e3-tr-0-1062"
+  ],
+  "befores": [
+    {
+      "name": "SetupManagerApp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627397292610,
+      "stop": 1627397292610
+    },
+    {
+      "name": "SetupLogin",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627397292610,
+      "stop": 1627397292610
+    }
+  ],
+  "afters": [
+    {
+      "name": "Dispose",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1627397292610,
+      "stop": 1627397292610
+    }
+  ],
+  "links": [],
+  "start": 1627397262673,
+  "stop": 1627397292611
+}

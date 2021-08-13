@@ -1,0 +1,75 @@
+{
+  "uuid": "11886af1-ab85-46b6-b1d5-30edd70fc644-tr-0-1009",
+  "historyId": "CascadeUITest.CheckCreateContract.#05 Обновление договоров",
+  "fullName": "CascadeUITest.CheckCreateContract.#05 Обновление договоров",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "15"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-F7IBGNA"
+    },
+    {
+      "name": "testClass",
+      "value": "CascadeUITest.CheckCreateContract"
+    },
+    {
+      "name": "testMethod",
+      "value": "RefreshContract"
+    },
+    {
+      "name": "package",
+      "value": "CascadeUITest.CheckCreateContract"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Договор"
+    },
+    {
+      "name": "suite",
+      "value": "Договор"
+    },
+    {
+      "name": "feature",
+      "value": "Договор"
+    }
+  ],
+  "links": [],
+  "name": "#05 Обновление договоров",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "#05 Обновление договоров",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "92643f41e6f64a7cb089914da5238b26-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1627398620103,
+      "stop": 1627398673947
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1627398620102,
+  "stop": 1627398673951
+}

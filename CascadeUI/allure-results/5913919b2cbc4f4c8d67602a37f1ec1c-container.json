@@ -1,0 +1,61 @@
+{
+  "uuid": "675ad449-d69c-4390-bdec-eff95fbc8bd5-tc-0-1000",
+  "name": "CascadeUITest.CheckCreateContract.#20 Проверка кнопок навигационной панели >> и <<",
+  "children": [
+    "30f80f87-69ad-477d-a3d8-9d4cb772d61e-tr-0-1039"
+  ],
+  "befores": [
+    {
+      "name": "SetupManagerApp",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1626950734808,
+      "stop": 1626950734808
+    },
+    {
+      "name": "SetupLogin",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1626950734808,
+      "stop": 1626950734808
+    }
+  ],
+  "afters": [
+    {
+      "name": "Dispose",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "TearDown : System.NullReferenceException : Object reference not set to an instance of an object.",
+        "trace": "--TearDown\r\n   at CascadeUITest.AuthBaseTest.Dispose() in C:\\Users\\GIT\\Cascade\\CascadeUI\\Tests\\AuthBaseTest.cs:line 28"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1626950734809,
+      "stop": 1626950734809
+    }
+  ],
+  "links": [],
+  "start": 1626950672767,
+  "stop": 1626950734830
+}
